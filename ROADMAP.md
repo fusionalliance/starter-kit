@@ -43,6 +43,7 @@ Starting from scratch, create standard configuration that can be used with almos
   - `scss-lint`
 * Documentation
   - `README.md`
+    - Standard data formats
   - `CHANGELOG.md`
   - Versioning strategy
   - Contribution instructions
