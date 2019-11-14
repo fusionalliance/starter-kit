@@ -1,5 +1,10 @@
-# TODO: Write some background information and details on how this
-#   stays clean and organized.
+# GITIGNORE
+# In order to keep remote repositories free of files specific to an
+# individual's development environment, certain files should not be committed
+# to the remote repository. We have attempted to define 2 categories of files:
+# General Stuff and Language Specific. Within each category is a heading
+# giving a clue to developers why a file/directory is ignored. Each rule under
+# a heading should be in alphabetical order.
 #
 
 # === General Stuff ===
@@ -9,18 +14,31 @@
 # Editor directories and files
 .idea
 .vscode
+*.iml
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+gen
+out
 
 # Local Env
 .env
 
-# Build Folder Ignores
+# Logs
+logs
+*.log
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# Build Output
 /dist
 /build
+.grunt
+.next
+.nuxt
 
 # === Language Specific ===
 # Node
@@ -31,8 +49,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# node-waf configuration
+.lock-wscript
 
-
-
-
-
+# Code Coverage output
+lib-cov
