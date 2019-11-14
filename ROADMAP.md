@@ -32,21 +32,26 @@ Starting from scratch, create standard configuration that can be used with almos
 * Environment configuration
   - `.editorconfig`
   - `.gitignore`
+  - **Status**: In development
 * Javascript configuration
   - `.eslintrc.js`
   - `.eslintignore`
+  - **Status**: In development
 * Stylesheet configuration
   - Sass architecture specifications (e.g. 7+1, @use vs. @import)
-  - `.scss-lint.yml`
+  - `.stylelintrc.js`
+  - **Status**: In development
 * Lint scripts
   - `eslint`
-  - `scss-lint`
+  - `stylelint`
+  - **Status**: In development
 * Documentation
   - `README.md`
     - Standard data formats
   - `CHANGELOG.md`
   - Versioning strategy
   - Contribution instructions
+  - **Status**: In development
 
 
 ## Phase 1: Pre-rendered Static Websites
