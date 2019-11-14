@@ -8,10 +8,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [0.1.0] - XXXX-XX-XX
 ### Added
 
-- Standard javascript configuration
-- Standard stylesheet configuration
-- Standard development environment configuration
-- Standard documentation
 
 ### Changed
 
