@@ -4,6 +4,7 @@ Enforcing a consistent approach to start up new projects at Fusion Alliance.
 ## Table of Contents
 - [Objectives](#objectives)
 - [Features](#features)
+- [Roadmap](#roadmap)
 - [Requirements](#requirements)
 - [Usage](#usage)
 - [FAQ](#faq)
@@ -19,6 +20,9 @@ Enforcing a consistent approach to start up new projects at Fusion Alliance.
 - Code formatting enforced with EditorConfig
 - JS linting with ESLint + AirBnB
 - Sass (SCSS) + Stylelint > CSS
+
+## Roadmap
+A separate [Roadmap doc](https://github.com/quicksolutions/starter-kit/blob/master/ROADMAP.md) has been created to manage the phases of development on this starter kit.
 
 ## Requirements
 - A code editor that supports EditorConfig, or [install the EditorConfig extension for you code editor](https://editorconfig.org/#download)
