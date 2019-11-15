@@ -18,7 +18,7 @@ Enforcing a consistent approach to start up new projects at Fusion Alliance.
 ## Features
 - Code formatting enforced with EditorConfig
 - JS linting with ESLint + AirBnB
-- Sass (SCSS) > CSS + stylelint
+- Sass (SCSS) + Stylelint > CSS
 
 ## Requirements
 - A code editor that supports EditorConfig, or [install the EditorConfig extension for you code editor](https://editorconfig.org/#download)
@@ -27,7 +27,10 @@ Enforcing a consistent approach to start up new projects at Fusion Alliance.
 
 ### SCSS
 - Generally follow [Sass Guidelines](https://sass-guidelin.es) for code style and best-practices
-  - Uses the [The 7-1 Pattern](https://sass-guidelin.es/#the-7-1-pattern) for architecture
+- SCSS style is enforced with [stylelint-scss](https://github.com/kristerkari/stylelint-scss) + [stylelint-config-recommended-scss](https://github.com/kristerkari/stylelint-config-recommended-scss)
+  - All SCSS files are linted EXCEPT for files in the `/assets/scss/vendors/` directory
+  - Rules can be overriden by adding exceptions to the `.stylelintrc.json` file. [See the docs for more details](https://github.com/kristerkari/stylelint-config-recommended-scss#extending-the-config).
+- Uses the [The 7-1 Pattern](https://sass-guidelin.es/#the-7-1-pattern) for architecture
 
 
 ## FAQ
