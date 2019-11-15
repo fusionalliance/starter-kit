@@ -71,6 +71,7 @@ Create a consistent developer experience for projects requiring a static website
 * Quality assurance
   - Accessibility (e.g. pa11y)
   - Lint scripts
+  - Commit hooks (e.g. Husky, prettier, eslint fix)
   - Functional testing process and reviews
   - Automated testing framework(s), configuration, and usage example(s) (e.g. Jest, Cypress.io)
   - **Status**: Pending
