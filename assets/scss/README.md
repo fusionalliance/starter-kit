@@ -74,4 +74,4 @@ SCSS style is enforced with [stylelint-scss](https://github.com/kristerkari/styl
   - [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard)
   - [stylelint-config-recommended-scss](https://github.com/kristerkari/stylelint-config-recommended-scss)
 - Rules can be overriden by adding exceptions to the `.stylelintrc.js` file. [See the docs for more details](https://github.com/kristerkari/stylelint-config-recommended-scss#extending-the-config).
-- All SCSS files are linted EXCEPT for files in the `/assets/scss/vendors/` directory
+- All SCSS files are linted EXCEPT for files in the `/assets/scss/vendors/` directory.
