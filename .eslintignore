@@ -1,0 +1,52 @@
+# ESLINTIGNORE
+# These are files ignored by eslint and generally follow the same rules as
+# `.gitignore`. Please refer there for information about structure and format.
+#
+
+# === General Stuff ===
+# System
+.DS_Store
+
+# Editor directories and files
+.idea
+.vscode
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+gen
+out
+
+# Local Env
+.env
+
+# Logs
+logs
+*.log
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# Build Output
+/dist
+/build
+.grunt
+.next
+.nuxt
+
+# === Language Specific ===
+# Node
+node_modules
+
+# Node - Log Files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# node-waf configuration
+.lock-wscript
+
+# Code Coverage output
+lib-cov
