@@ -25,7 +25,7 @@ The following subitems should be used to maintain visibility into starter kit de
 * If a Pull Request has been created for an item, add `PR: [link]`.
 * If an item has a lack of consensus, create a PR subitem for each option. Add a subitem of `**Tabled**: [description]` with a description of the disagreement. This should be discussed with wider input or at a dedicated meeting.
 
-## Phase 0: Universal Configuration (released 2019-11-18)
+## Phase 0: Universal Configuration
 
 Starting from scratch, create standard configuration that can be used with almost every web project.
 
@@ -48,6 +48,7 @@ Starting from scratch, create standard configuration that can be used with almos
   - Versioning strategy
   - Contribution instructions
 
+These changes were implemented in https://github.com/quicksolutions/starter-kit/pull/1.
 
 ## Phase 1: Pre-rendered Static Websites
 
