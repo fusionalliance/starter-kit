@@ -25,33 +25,28 @@ The following subitems should be used to maintain visibility into starter kit de
 * If a Pull Request has been created for an item, add `PR: [link]`.
 * If an item has a lack of consensus, create a PR subitem for each option. Add a subitem of `**Tabled**: [description]` with a description of the disagreement. This should be discussed with wider input or at a dedicated meeting.
 
-## Phase 0: Universal Configuration
+## Phase 0: Universal Configuration (released 2019-11-18)
 
 Starting from scratch, create standard configuration that can be used with almost every web project.
 
 * Environment configuration
   - `.editorconfig`
   - `.gitignore`
-  - **Status**: Complete
 * Javascript configuration
   - `.eslintrc.js`
   - `.eslintignore`
-  - **Status**: Complete
 * Stylesheet configuration
   - Sass architecture specifications (e.g. 7+1, @use vs. @import)
   - `.stylelintrc.js`
-  - **Status**: Complete
 * Lint scripts
   - `eslint`
   - `stylelint`
-  - **Status**: Complete
 * Documentation
   - `README.md`
     - Standard data formats
   - `CHANGELOG.md`
   - Versioning strategy
   - Contribution instructions
-  - **Status**: Complete
 
 
 ## Phase 1: Pre-rendered Static Websites
@@ -61,20 +56,24 @@ Create a consistent developer experience for projects requiring a static website
 * Development server
   - Live-reload
   - Preview of static build
+  - **Status**: Pending
 * Update strategy
   - version control
   - merge workflow (e.g. Gitflow)
+  - **Status**: Pending
 * Build process
   - HTML pre-rendering
   - Script bundling
   - CSS pre-processing
   - Image optimization
   - Minification
+  - **Status**: Pending
 * Quality assurance
   - Accessibility (e.g. pa11y)
   - Lint scripts
   - Functional testing process and reviews
   - Automated testing framework(s), configuration, and usage example(s) (e.g. Jest, Cypress.io)
+  - **Status**: Pending
 
 ## Phase 2: Front End Frameworks
 
