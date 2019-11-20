@@ -6,11 +6,13 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const path = require('path');
 
+const basePath = './src';
+const assetPath = `${basePath}/assets`;
 const buildPath = path.resolve(__dirname, 'dist');
 
 module.exports = {
   devtool: 'source-map',
-  entry: './assets/js/index.js',
+  entry: `${assetPath}/js/index.js`,
   output: {
     filename: '[name].[hash:20].js',
     path: buildPath,
@@ -80,15 +82,16 @@ module.exports = {
     ],
   },
   plugins: [
+    new Dotenv(),
     new HtmlWebpackPlugin({
-      template: './index.html',
+      template: `${basePath}/index.html`,
       // Inject the js bundle at the end of the body of the given template
       inject: 'body',
     }),
     new CleanWebpackPlugin(buildPath),
     new FaviconsWebpackPlugin({
       // Your source logo
-      logo: './assets/img/icon.png',
+      logo: `${assetPath}/img/icon.png`,
       // The prefix for all image files (might be a folder or a name)
       prefix: 'icons-[hash]/',
       // Generate a cache file with control hashes and

@@ -1,9 +1,13 @@
+const Dotenv = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
+const basePath = './src';
+const assetPath = `${basePath}/assets`;
+
 module.exports = {
   devtool: 'eval-cheap-module-source-map',
-  entry: './assets/js/index.js',
+  entry: `${assetPath}/js/index.js`,
   devServer: {
     port: 8080,
     contentBase: path.join(__dirname, 'dist'),
@@ -72,8 +76,9 @@ module.exports = {
     ],
   },
   plugins: [
+    new Dotenv(),
     new HtmlWebpackPlugin({
-      template: './index.html',
+      template: `${basePath}/index.html`,
       inject: true,
     }),
   ],

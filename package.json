@@ -9,8 +9,8 @@
     "dev": "nodemon -e js,scss --exec \"npm-run-all lint dev:server\" --ignore dist",
     "dev:server": "webpack-dev-server --config webpack.dev.js --mode development",
     "lint": "npm run eslint && npm run stylelint",
-    "eslint": "eslint 'assets/js/*.js'; exit 0",
-    "stylelint": "stylelint 'assets/scss/**/*.scss'; exit 0",
+    "eslint": "eslint 'src/assets/js/*.js'; exit 0",
+    "stylelint": "stylelint 'src/assets/scss/**/*.scss'; exit 0",
     "scss": "npm run build:scss -- --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -37,6 +37,7 @@
     "css-loader": "^0.28.11",
     "cssnano": "^3.10.0",
     "dotenv": "^8.2.0",
+    "dotenv-webpack": "^1.7.0",
     "eslint": "^6.1.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
