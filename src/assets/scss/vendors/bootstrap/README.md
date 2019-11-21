@@ -1,6 +1,6 @@
 # Bootstrap
 
-Bootstrap is installed as a project dev dependency. Currently, only styles for [Reboot](https://getbootstrap.com/docs/4.3/content/reboot/) and the [Grid stystem](https://getbootstrap.com/docs/4.3/layout/grid/) are imported in `_bootstrap.scss` as a base.
+Bootstrap is installed as a project dev dependency. Currently, only styles for [Reboot](https://getbootstrap.com/docs/4.3/content/reboot/), the [Grid stystem](https://getbootstrap.com/docs/4.3/layout/grid/), [Utliities](https://getbootstrap.com/docs/4.3/utilities/borders/), print styles, and their supporting files are imported in `_bootstrap.scss` as a base.
 ```SCSS
 /*!
   * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -9,8 +9,14 @@ Bootstrap is installed as a project dev dependency. Currently, only styles for [
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 */
 
-@import "~bootstrap/scss/bootstrap-reboot.scss";
-@import "~bootstrap/scss/bootstrap-grid.scss";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/print";
 ```
 
 
@@ -29,7 +35,7 @@ If all components are required, replace the contents of `_bootstrap.scss` with t
 
 
 ## Customizing Bootstrap import
-If some, but not all components are required, replace the contents of `_bootstrap.scss` with the following, removing unneeded components.
+If some, but not all components are required, replace the contents of `_bootstrap.scss` with the following, removing unneeded imports.
 
 ```SCSS
 /*!
@@ -39,41 +45,41 @@ If some, but not all components are required, replace the contents of `_bootstra
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 */
 
-@import "functions";
-@import "variables";
-@import "mixins";
-@import "root";
-@import "reboot";
-@import "type";
-@import "images";
-@import "code";
-@import "grid";
-@import "tables";
-@import "forms";
-@import "buttons";
-@import "transitions";
-@import "dropdown";
-@import "button-group";
-@import "input-group";
-@import "custom-forms";
-@import "nav";
-@import "navbar";
-@import "card";
-@import "breadcrumb";
-@import "pagination";
-@import "badge";
-@import "jumbotron";
-@import "alert";
-@import "progress";
-@import "media";
-@import "list-group";
-@import "close";
-@import "toasts";
-@import "modal";
-@import "tooltip";
-@import "popover";
-@import "carousel";
-@import "spinners";
-@import "utilities";
-@import "print";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/jumbotron";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/media";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/toasts";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/spinners";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/print";
 ```

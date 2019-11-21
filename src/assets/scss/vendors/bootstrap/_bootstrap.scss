@@ -5,5 +5,11 @@
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 */
 
-@import "~bootstrap/scss/bootstrap-reboot.scss";
-@import "~bootstrap/scss/bootstrap-grid.scss";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/print";
