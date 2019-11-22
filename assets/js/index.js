@@ -1,6 +1,3 @@
-// Require CSS & SCSS to include in bundle
-require('../scss/app.scss');
-
 const context = (options = {}) => {
   const defaultOptions = {
     option1: 'Value 1',
