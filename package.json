@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npm-run-all build:*",
-    "build:js": "parcel assets/index.html",
+    "build:js": "parcel pages/*.html",
     "build:scss": "node-sass 'assets/scss' -o 'dist/assets/css' --output-style compressed",
     "dev": "parcel watch assets/index.html",
     "lint": "npm run eslint && npm run stylelint",
