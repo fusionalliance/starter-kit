@@ -32,27 +32,23 @@ Starting from scratch, create standard configuration that can be used with almos
 * Environment configuration
   - `.editorconfig`
   - `.gitignore`
-  - **Status**: In development
 * Javascript configuration
   - `.eslintrc.js`
   - `.eslintignore`
-  - **Status**: In development
 * Stylesheet configuration
   - Sass architecture specifications (e.g. 7+1, @use vs. @import)
   - `.stylelintrc.js`
-  - **Status**: In development
 * Lint scripts
   - `eslint`
   - `stylelint`
-  - **Status**: In development
 * Documentation
   - `README.md`
     - Standard data formats
   - `CHANGELOG.md`
   - Versioning strategy
   - Contribution instructions
-  - **Status**: In development
 
+These changes were implemented in https://github.com/quicksolutions/starter-kit/pull/1.
 
 ## Phase 1: Pre-rendered Static Websites
 
@@ -61,20 +57,25 @@ Create a consistent developer experience for projects requiring a static website
 * Development server
   - Live-reload
   - Preview of static build
+  - **Status**: Pending
 * Update strategy
   - version control
   - merge workflow (e.g. Gitflow)
+  - **Status**: Pending
 * Build process
   - HTML pre-rendering
   - Script bundling
   - CSS pre-processing
   - Image optimization
   - Minification
+  - **Status**: Pending
 * Quality assurance
   - Accessibility (e.g. pa11y)
   - Lint scripts
+  - Commit hooks (e.g. Husky, prettier, eslint fix)
   - Functional testing process and reviews
   - Automated testing framework(s), configuration, and usage example(s) (e.g. Jest, Cypress.io)
+  - **Status**: Pending
 
 ## Phase 2: Front End Frameworks
 
