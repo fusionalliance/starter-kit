@@ -1,3 +1,5 @@
+# Good reference: https://github.com/cBioPortal/cbioportal-frontend/blob/master/.circleci/config.yml
+
 version: 2
 jobs:
   build:
