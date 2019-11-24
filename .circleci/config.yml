@@ -17,11 +17,13 @@ jobs:
           command: |
             node --version
   lint:
+    <<: *defaults
     steps:
       - run:
           command:
             npm run lint
   unit_tests:
+    <<: *defaults
     steps:
       - run:
           command:
