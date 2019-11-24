@@ -1,12 +1,40 @@
 # Good reference: https://github.com/cBioPortal/cbioportal-frontend/blob/master/.circleci/config.yml
 
+defaults: &defaults
+  working_directory: /tmp/starter-kit
+  docker:
+    # specify the version you desire here
+    - image: circleci/node:8.12.0-browsers
+
 version: 2
 jobs:
-  build:
-    docker:
-      - image: circleci/node:8.12.0-browsers
+  install:
+    <<: *defaults
     steps:
       - checkout
       - run:
+          name: "Show node version"
+          command: |
+            node --version
+  lint:
+    steps:
+      - run:
+          command:
+            npm run lint
+  unit_tests:
+    steps:
+      - run:
           command:
             npm test
+
+workflows:
+    version: 2
+    install_and_test:
+        jobs:
+            - install
+            - lint:
+                requires:
+                    - install
+            - unit_tests:
+                requires:
+                    - install
