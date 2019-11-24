@@ -19,12 +19,14 @@ jobs:
   lint:
     <<: *defaults
     steps:
+      - checkout
       - run:
           command:
             npm run lint
   unit_tests:
     <<: *defaults
     steps:
+      - checkout
       - run:
           command:
             npm test
