@@ -1,5 +1,6 @@
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const cssNano = require('cssnano');
+const Dotenv = require('dotenv-webpack');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');

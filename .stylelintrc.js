@@ -9,8 +9,10 @@
 // ignoreFiles:
 //   We won't lint vendor files (Normalize, Bootstrap, etc...)
 // rules:
-//   Overrides to allow properly formatted @if/@else blocks. Adapted from
-//   https://github.com/kristerkari/stylelint-scss/blob/master/docs/examples/if-else.md
+//   Overrides to allow properly formatted @if/@else blocks. See:
+//     https://sass-guidelin.es/#conditional-statements
+//   Override rules adapted from:
+//     https://github.com/kristerkari/stylelint-scss/blob/master/docs/examples/if-else.md
 
 module.exports = {
   plugins: [
