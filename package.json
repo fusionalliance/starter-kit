@@ -33,6 +33,7 @@
     "ajv": "^6.3.0",
     "autoprefixer": "^9.3.1",
     "babel-loader": "^8.0.0",
+    "bootstrap": "^4.3.1",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.11",
     "cssnano": "^3.10.0",
