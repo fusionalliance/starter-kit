@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "npm-run-all build:*",
+    "build:html": "env-cmd ejs-prerender",
     "build:scss": "node-sass 'assets/scss' -o 'dist/assets/css' --output-style compressed",
     "dev": "nodemon -e js,scss --exec \"npm run lint\" --ignore dist",
+    "preview": "npm run build:html && npx http-server dist",
     "lint": "npm run eslint && npm run stylelint",
     "eslint": "eslint 'assets/js/*.js'; exit 0",
     "stylelint": "stylelint 'assets/scss/**/*.scss'; exit 0",
@@ -25,6 +27,9 @@
   "homepage": "https://github.com/quicksolutions/starter-kit#readme",
   "dependencies": {},
   "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "ejs-prerender": "^1.0.3",
+    "env-cmd": "^10.0.1",
     "eslint": "^6.1.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
