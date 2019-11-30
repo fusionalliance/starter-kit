@@ -8,8 +8,8 @@
     "build:scss": "node-sass 'assets/scss' -o 'dist/assets/css' --output-style compressed",
     "dev": "nodemon -e js,scss --exec \"npm run lint\" --ignore dist",
     "lint": "npm run eslint && npm run stylelint",
-    "eslint": "eslint 'assets/js/*.js'; exit 0",
-    "stylelint": "stylelint 'assets/scss/**/*.scss'; exit 0",
+    "eslint": "eslint 'assets/js/*.js'",
+    "stylelint": "stylelint 'assets/scss/**/*.scss'",
     "scss": "npm run build:scss -- --watch",
     "test": "jest"
   },
