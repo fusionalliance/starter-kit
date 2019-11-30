@@ -16,6 +16,8 @@ jobs:
           name: "Show node version"
           command: |
             node --version
+            npm --version
+            npm install
   lint:
     <<: *defaults
     steps:
