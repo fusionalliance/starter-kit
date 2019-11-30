@@ -17,20 +17,21 @@ jobs:
           command: |
             node --version
             npm --version
-            npm install
   lint:
     <<: *defaults
     steps:
       - checkout
       - run:
-          command:
+          command: |
+            npm install
             npm run lint
   unit_tests:
     <<: *defaults
     steps:
       - checkout
       - run:
-          command:
+          command: |
+            npm install
             npm test
 
 workflows:
