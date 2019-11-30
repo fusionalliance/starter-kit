@@ -12,7 +12,7 @@
     "eslint": "eslint 'assets/js/*.js'",
     "stylelint": "stylelint 'assets/scss/**/*.scss'",
     "scss": "npm run build:scss -- --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {
     "type": "git",
