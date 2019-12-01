@@ -1,6 +1,14 @@
 // Require CSS & SCSS to include in bundle
 require('../scss/app.scss');
 
+function loadExampleComponent({ option2 }) {
+  const componentSelector = '.example-component';
+  const exampleComponents = document.querySelectorAll(componentSelector);
+  exampleComponents.forEach((component) => {
+    component.innerText = option2;
+  });
+}
+
 const context = (options = {}) => {
   const defaultOptions = {
     option1: 'Value 1',
@@ -14,6 +22,8 @@ const context = (options = {}) => {
 
   console.log(`Options supplied: ${Object.keys(options).join(', ')}`);
   console.log(opts);
+
+  loadExampleComponent(opts);
 };
 
 context({

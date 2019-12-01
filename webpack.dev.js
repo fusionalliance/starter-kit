@@ -2,7 +2,7 @@ const Dotenv = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
-const basePath = './src';
+const basePath = '.';
 const assetPath = `${basePath}/assets`;
 
 module.exports = {
@@ -78,7 +78,7 @@ module.exports = {
   plugins: [
     new Dotenv(),
     new HtmlWebpackPlugin({
-      template: `${basePath}/index.html`,
+      template: `${basePath}/dist/index.html`,
       inject: true,
     }),
   ],
