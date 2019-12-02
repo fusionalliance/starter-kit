@@ -8,7 +8,7 @@
     "build:clean": "rm -rf dist/",
     "build:html": "env-cmd ejs-prerender",
     "build:js": "webpack --config webpack.prod.js --mode production",
-    "dev": "run-p watch:*",
+    "dev": "npm-run-all -p watch:*",
     "watch:html": "nodemon -e ejs --exec \"npm run build:html\"",
     "watch:js": "webpack-dev-server --config webpack.dev.js --mode development",
     "watch:lint": "nodemon -e js,scss --exec \"npm run lint\" --ignore dist",
