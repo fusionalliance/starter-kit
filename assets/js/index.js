@@ -5,7 +5,8 @@ function loadExampleComponent({ option2 }) {
   const componentSelector = '.example-component';
   const exampleComponents = document.querySelectorAll(componentSelector);
   exampleComponents.forEach((component) => {
-    component.innerText = option2;
+    const componentEl = component;
+    componentEl.innerText = option2;
   });
 }
 
@@ -20,7 +21,9 @@ const context = (options = {}) => {
     ...options,
   };
 
+  // eslint-disable-next-line no-console
   console.log(`Options supplied: ${Object.keys(options).join(', ')}`);
+  // eslint-disable-next-line no-console
   console.log(opts);
 
   loadExampleComponent(opts);
