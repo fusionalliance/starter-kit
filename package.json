@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm-run-all build:clean build:html build:js",
     "build:clean": "rm -rf dist/",
-    "build:html": "env-cmd ejs-prerender",
+    "build:html": "echo \"No prerendering step specified\" && exit 0",
     "build:js": "webpack --config webpack.prod.js --mode production",
     "dev": "npm-run-all -p watch:*",
     "watch:html": "nodemon -e ejs --exec \"npm run build:html\"",
@@ -44,7 +44,6 @@
     "cssnano": "^3.10.0",
     "dotenv": "^8.2.0",
     "dotenv-webpack": "^1.7.0",
-    "ejs-prerender": "^1.0.3",
     "env-cmd": "^10.0.1",
     "eslint": "^6.1.0",
     "eslint-config-airbnb-base": "^14.0.0",
