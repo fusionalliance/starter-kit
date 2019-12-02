@@ -7,7 +7,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const path = require('path');
 
-const basePath = './src';
+const basePath = '.';
 const assetPath = `${basePath}/assets`;
 const buildPath = path.resolve(__dirname, 'dist');
 
@@ -85,11 +85,11 @@ module.exports = {
   plugins: [
     new Dotenv(),
     new HtmlWebpackPlugin({
-      template: `${basePath}/index.html`,
+      template: `${basePath}/dist/index.html`,
       // Inject the js bundle at the end of the body of the given template
       inject: 'body',
     }),
-    new CleanWebpackPlugin(buildPath),
+    // new CleanWebpackPlugin(buildPath),
     new FaviconsWebpackPlugin({
       // Your source logo
       logo: `${assetPath}/img/icon.png`,
