@@ -9,7 +9,7 @@ const path = require('path');
 
 const basePath = '.';
 const assetPath = `${basePath}/assets`;
-const buildPath = path.resolve(__dirname, 'dist');
+const buildPath = path.resolve(__dirname, 'public');
 
 module.exports = {
   devtool: 'source-map',
@@ -85,7 +85,7 @@ module.exports = {
   plugins: [
     new Dotenv(),
     new HtmlWebpackPlugin({
-      template: `${basePath}/dist/index.html`,
+      template: `${basePath}/public/index.html`,
       // Inject the js bundle at the end of the body of the given template
       inject: 'body',
     }),
