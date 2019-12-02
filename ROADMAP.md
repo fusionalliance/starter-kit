@@ -57,7 +57,7 @@ Create a consistent developer experience for projects requiring a static website
 * Development server
   - Live-reload
   - Preview of static build
-  - **Status**: Included in Build Bake-Off PRs
+  - **Status**: In progress.
 * Update strategy
   - version control
   - merge workflow (e.g. Gitflow)
@@ -65,11 +65,10 @@ Create a consistent developer experience for projects requiring a static website
 * Build process
   - HTML pre-rendering
   - Script bundling
-    - 2 bake-off PRs to compare Webpack and Parcel
   - CSS pre-processing
   - Image optimization
   - Minification
-  - **Status**: SCSS build complete. Rest in progress.
+  - **Status**: In progress. SCSS build complete, but needs merged into a Webpack build. Decision made on: Webpack for script bundling and css pre-processing, Handlebars for HTML pre-rendering.
 * Quality assurance
   - Accessibility (e.g. pa11y)
   - Lint scripts
