@@ -5,4 +5,7 @@ module.exports = {
       devDependencies: true,
     }],
   },
+  globals: {
+    document: true
+  }
 };
