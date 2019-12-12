@@ -34,6 +34,9 @@ A separate [Roadmap doc](ROADMAP.md) has been created to manage the phases of de
 - Generally follows [Sass Guidelines](https://sass-guidelin.es/#the-7-1-pattern) for code style
 - See the [SCSS README](assets/scss/README.md) for more information
 
+### Image Minification
+- Currently requires libpng, which you can install via homebrew `brew install libpng`
+
 
 ## FAQ
 
