@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm-run-all build:clean build:html build:js",
     "build:clean": "rm -rf dist/",
-    "build:html": "echo \"No prerendering step specified\" && exit 0",
+    "build:html": "env-cmd handlebars-transpile",
     "build:js": "webpack --config webpack.prod.js --mode production",
     "dev": "npm-run-all -p watch:*",
     "watch:html": "nodemon -e ejs --exec \"npm run build:html\"",
