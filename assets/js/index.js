@@ -1,14 +1,9 @@
-// Require CSS & SCSS to include in bundle
-require('../scss/app.scss');
+import exampleComponent from './exampleComponent.js';
+import './scss';
 
-function loadExampleComponent({ option2 }) {
-  const componentSelector = '.example-component';
-  const exampleComponents = document.querySelectorAll(componentSelector);
-  exampleComponents.forEach((component) => {
-    const componentEl = component;
-    componentEl.innerText = option2;
-  });
-}
+const components = [
+  exampleComponent,
+];
 
 const context = (options = {}) => {
   const defaultOptions = {
@@ -26,7 +21,7 @@ const context = (options = {}) => {
   // eslint-disable-next-line no-console
   console.log(opts);
 
-  loadExampleComponent(opts);
+  components.forEach((component) => component(opts));
 };
 
 context({

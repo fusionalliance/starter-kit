@@ -9,7 +9,7 @@
     "build:html": "env-cmd handlebars-transpile",
     "build:js": "webpack --config webpack.prod.js --mode production",
     "dev": "npm-run-all -p watch:*",
-    "watch:html": "nodemon -e ejs --exec \"npm run build:html\"",
+    "watch:html": "nodemon -e hbs --exec \"npm run build:html\"",
     "watch:js": "webpack-dev-server --config webpack.dev.js --mode development",
     "watch:lint": "nodemon -e js,scss --exec \"npm run lint\" --ignore dist",
     "lint": "npm run eslint && npm run stylelint",
