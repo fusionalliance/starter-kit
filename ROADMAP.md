@@ -32,27 +32,27 @@ These changes were implemented in https://github.com/quicksolutions/starter-kit/
 Starting from scratch, create standard configuration that can be used with almost every web project.
 
 * Environment configuration
-  - `.editorconfig`
-  - `.gitignore`
+  - `.editorconfig` #1
+  - `.gitignore` #1
   - **Status**: Complete
 * Javascript configuration
-  - `.eslintrc.js`
-  - `.eslintignore`
+  - `.eslintrc.js` #1
+  - `.eslintignore` #1
   - **Status**: Complete
 * Stylesheet configuration
-  - Sass architecture specifications (e.g. 7+1, @use vs. @import)
-  - `.stylelintrc.js`
+  - Sass architecture specifications (e.g. 7+1, @use vs. @import) #1
+  - `.stylelintrc.js` #1
   - **Status**: Complete
 * Lint scripts
-  - `eslint`
-  - `stylelint`
+  - `eslint` #1
+  - `stylelint` #1
   - **Status**: Complete
 * Documentation
-  - `README.md`
+  - `README.md` #1
     - Standard data formats
-  - `CHANGELOG.md`
-  - Versioning strategy
-  - Contribution instructions
+  - `CHANGELOG.md` #1
+  - Versioning strategy #1
+  - Contribution instructions #1
   - **Status**: Complete
 
 ## Phase 1: Pre-rendered Static Websites
@@ -60,26 +60,26 @@ Starting from scratch, create standard configuration that can be used with almos
 Create a consistent developer experience for projects requiring a static website deployment.
 
 * Development server
-  - Live-reload
-  - Preview of static build
+  - Live-reload #9
+  - Preview of static build #9
   - **Status**: In progress.
 * Update strategy
-  - version control
-  - merge workflow (e.g. Gitflow)
+  - version control #8
+  - merge workflow (e.g. Gitflow) #8
   - **Status**: Done.
 * Build process
-  - HTML pre-rendering
-  - Script bundling
-  - CSS pre-processing
+  - HTML pre-rendering #9
+  - Script bundling #9
+  - CSS pre-processing #9 #11
   - Image optimization
   - Minification
   - **Status**: In progress. SCSS build complete, but needs merged into a Webpack build. Decision made on: Webpack for script bundling and css pre-processing, Handlebars for HTML pre-rendering.
 * Quality assurance
   - Accessibility (e.g. pa11y)
-  - Lint scripts
+  - Lint scripts #12 
   - Commit hooks (e.g. Husky, prettier, eslint fix)
   - Functional testing process and reviews
-  - Automated testing framework(s), configuration, and usage example(s) (e.g. Jest, Cypress.io)
+  - Automated testing framework(s), configuration, and usage example(s) (e.g. Jest, Cypress.io) #13
   - **Status**: Pending
 
 ## Phase 2: Front End Frameworks
