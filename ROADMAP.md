@@ -32,27 +32,27 @@ These changes were implemented in https://github.com/quicksolutions/starter-kit/
 Starting from scratch, create standard configuration that can be used with almost every web project.
 
 * Environment configuration
-  - `.editorconfig` [#1](https://github.com/quicksolutions/starter-kit/pull/1)
-  - `.gitignore` [#1](https://github.com/quicksolutions/starter-kit/pull/1)
+  - `.editorconfig` ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
+  - `.gitignore` ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
   - **Status**: Complete
 * Javascript configuration
-  - `.eslintrc.js` [#1](https://github.com/quicksolutions/starter-kit/pull/1)
-  - `.eslintignore` [#1](https://github.com/quicksolutions/starter-kit/pull/1)
+  - `.eslintrc.js` ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
+  - `.eslintignore` ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
   - **Status**: Complete
 * Stylesheet configuration
-  - Sass architecture specifications (e.g. 7+1, @use vs. @import) [#1](https://github.com/quicksolutions/starter-kit/pull/1)
-  - `.stylelintrc.js` [#1](https://github.com/quicksolutions/starter-kit/pull/1)
+  - Sass architecture specifications (e.g. 7+1, @use vs. @import) ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
+  - `.stylelintrc.js` ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
   - **Status**: Complete
 * Lint scripts
-  - `eslint` [#1](https://github.com/quicksolutions/starter-kit/pull/1)
-  - `stylelint` [#1](https://github.com/quicksolutions/starter-kit/pull/1)
+  - `eslint` ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
+  - `stylelint` ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
   - **Status**: Complete
 * Documentation
-  - `README.md` [#1](https://github.com/quicksolutions/starter-kit/pull/1)
+  - `README.md` ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
     - Standard data formats
-  - `CHANGELOG.md` [#1](https://github.com/quicksolutions/starter-kit/pull/1)
-  - Versioning strategy [#1](https://github.com/quicksolutions/starter-kit/pull/1)
-  - Contribution instructions [#1](https://github.com/quicksolutions/starter-kit/pull/1)
+  - `CHANGELOG.md` ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
+  - Versioning strategy ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
+  - Contribution instructions ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
   - **Status**: Complete
 
 ## Phase 1: Pre-rendered Static Websites
@@ -64,13 +64,13 @@ Create a consistent developer experience for projects requiring a static website
   - Preview of static build [#9](https://github.com/quicksolutions/starter-kit/pull/9)
   - **Status**: In progress.
 * Update strategy
-  - version control [#8](https://github.com/quicksolutions/starter-kit/pull/8)
-  - merge workflow (e.g. Gitflow) [#8](https://github.com/quicksolutions/starter-kit/pull/8)
+  - version control ~~[#8](https://github.com/quicksolutions/starter-kit/pull/8)~~
+  - merge workflow (e.g. Gitflow) ~~[#8](https://github.com/quicksolutions/starter-kit/pull/8)~~
   - **Status**: Done.
 * Build process
   - HTML pre-rendering [#9](https://github.com/quicksolutions/starter-kit/pull/9)
   - Script bundling [#9](https://github.com/quicksolutions/starter-kit/pull/9)
-  - CSS pre-processing [#9](https://github.com/quicksolutions/starter-kit/pull/9) [#11](https://github.com/quicksolutions/starter-kit/pull/11)
+  - CSS pre-processing [#9](https://github.com/quicksolutions/starter-kit/pull/9) ~~[#11](https://github.com/quicksolutions/starter-kit/pull/11)~~
   - Image optimization
   - Minification
   - **Status**: In progress. SCSS build complete, but needs merged into a Webpack build. Decision made on: Webpack for script bundling and css pre-processing, Handlebars for HTML pre-rendering.
