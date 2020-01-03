@@ -32,7 +32,7 @@ These changes were implemented in https://github.com/quicksolutions/starter-kit/
 Starting from scratch, create standard configuration that can be used with almost every web project.
 
 * Environment configuration
-  - `.editorconfig` [#1](quicksolutions/starter-kit#1)
+  - `.editorconfig` [#1](#1)
   - `.gitignore` [#1](quicksolutions/starter-kit#1)
   - **Status**: Complete
 * Javascript configuration
