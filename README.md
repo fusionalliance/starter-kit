@@ -35,9 +35,11 @@ A separate [Roadmap doc](ROADMAP.md) has been created to manage the phases of de
 - See the [SCSS README](assets/scss/README.md) for more information
 
 ### Scripts
-- `dev` - easiest way to start development
-- `lint` - check your code for lint
-- `pre-commit` - configured to run locally before you commit. Uses Husky
+
+- **Develop locally**: `npm run dev`
+- **Build**: `npm run build`
+- **Watch for lint**: `npm run dev`
+- **Run tests**: `npm test`
 
 ## FAQ
 

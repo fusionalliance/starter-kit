@@ -27,6 +27,7 @@ Needed for running the site locally:
 
 ### Scripts
 
+- **Develop locally**: `npm run dev`
 - **Build**: `npm run build`
 - **Watch for lint**: `npm run dev`
 - **Run tests**: `npm test`
