@@ -21,17 +21,17 @@ jobs:
     steps:
       - checkout
       - run:
-        command: |
-          npm install
-          npm run lint
+          command: |
+            npm install
+            npm run lint
   unit_tests:
     <<: *defaults
     steps:
       - checkout
       - run:
-        command: |
-            npm install
-            npm test
+          command: |
+              npm install
+              npm test
 
 workflows:
     version: 2
