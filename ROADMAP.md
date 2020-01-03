@@ -27,28 +27,33 @@ The following subitems should be used to maintain visibility into starter kit de
 
 ## Phase 0: Universal Configuration
 
+These changes were implemented in https://github.com/quicksolutions/starter-kit/pull/1.
+
 Starting from scratch, create standard configuration that can be used with almost every web project.
 
 * Environment configuration
   - `.editorconfig`
   - `.gitignore`
+  - **Status**: Complete
 * Javascript configuration
   - `.eslintrc.js`
   - `.eslintignore`
+  - **Status**: Complete
 * Stylesheet configuration
   - Sass architecture specifications (e.g. 7+1, @use vs. @import)
   - `.stylelintrc.js`
+  - **Status**: Complete
 * Lint scripts
   - `eslint`
   - `stylelint`
+  - **Status**: Complete
 * Documentation
   - `README.md`
     - Standard data formats
   - `CHANGELOG.md`
   - Versioning strategy
   - Contribution instructions
-
-These changes were implemented in https://github.com/quicksolutions/starter-kit/pull/1.
+  - **Status**: Complete
 
 ## Phase 1: Pre-rendered Static Websites
 
