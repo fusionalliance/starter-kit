@@ -30,8 +30,8 @@ jobs:
       - checkout
       - run:
           command: |
-              npm install
-              npm test
+            npm install
+            npm test
 
 workflows:
     version: 2
