@@ -20,7 +20,7 @@ const context = (options = {}) => {
   console.log(opts);
 
   return {
-    handleClick: handleClick.bind(dataService),
+    handleClick: handleClick.bind(null, dataService),
   };
 };
 
