@@ -36,6 +36,7 @@ build/Release
 # Build Output
 /dist
 /build
+/public
 .cache
 .grunt
 .next
