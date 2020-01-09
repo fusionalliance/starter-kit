@@ -28,6 +28,7 @@ Needed for running the site locally:
 ### Scripts
 
 - **Install server and website**: `npm install`
+- **Develop locally**: `npm run dev`
 - **Build**: `npm run build`
 - **Watch for lint**: `npm run dev`
 - **Run tests**: `npm test`
