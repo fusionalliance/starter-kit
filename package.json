@@ -40,7 +40,7 @@
     "babel-loader": "^8.0.0",
     "bootstrap": "^4.3.1",
     "clean-webpack-plugin": "^0.1.19",
-    "css-loader": "^0.28.11",
+    "css-loader": "^3.4.1",
     "cssnano": "^3.10.0",
     "dotenv": "^8.2.0",
     "dotenv-webpack": "^1.7.0",
