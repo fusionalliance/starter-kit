@@ -61,7 +61,7 @@ Create a consistent developer experience for projects requiring a static website
 * Update strategy
   - version control
   - merge workflow (e.g. Gitflow)
-  - **Status**: PR created: https://github.com/quicksolutions/starter-kit/pull/8
+  - **Status**: Done.
 * Build process
   - HTML pre-rendering
   - Script bundling

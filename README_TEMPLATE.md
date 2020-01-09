@@ -41,7 +41,18 @@ Needed for running the site locally:
 If your question is not answered here, please send questions to [insert email address here].
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+[Pull requests](https://www.atlassian.com/git/tutorials/making-a-pull-request) are welcome. For major changes, please open an issue first to discuss what you would like to change. Pull requests should follow [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). A more in-depth description of Gitflow can be found at https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow, however the highlights are illustrated below:
+
+* the `master` branch ALWAYS reflects the code in production
+* a `develop` branch reflects stable changes that are not in production.
+* `feature` branches hold development of added, changed, or removed features, following pattern of `feature/123-feature-name` for features linked to task/story/requirement numbers and `feature/feature-name` when tasks/stories/requirements do not have numbers
+* `bugfix` branches hold bug fixes grouped with a larger release, following pattern of `bugfix/123-bug-name` for features linked to bug tracking numbers and `bugfix/bug-name` when bugs do not have numbers
+* `release` branches hold the state of a `develop` branch while it is prepped for release, following pattern of `release/v1.2.3` matching the version number inside `package.json` and `CHANGELOG.md`
+* `hotfix` branches hold bug fixes inteded to be implemented by themselves, following pattern of `hotfix/v1.2.3` matching the version number inside `package.json` and `CHANGELOG.md`
+* `feature` and `bugfix` branches are created from `develop` and get merged back into `develop`
+* `release` branches are created from `develop` and always get merged into `master` AND `develop`
+* `hotfix` branches are created from `master` and get merged into `master` AND `develop`
+* Don't forget to update the CHANGELOG!
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
