@@ -68,7 +68,7 @@ Create a consistent developer experience for projects requiring a static website
   - CSS pre-processing
   - Image optimization
   - Minification
-  - **Status**: In progress. SCSS build complete, but needs merged into a Webpack build. Decision made on: Webpack for script bundling and css pre-processing, Handlebars for HTML pre-rendering.
+  - **Status**: In review. HBS, JS, and SCSS builds complete. Image optimization pending.
 * Quality assurance
   - Accessibility (e.g. pa11y)
   - Lint scripts
