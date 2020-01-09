@@ -28,16 +28,17 @@ Needed for running the site locally:
 ### Scripts
 
 - **Install server and website**: `npm install`
-- **Develop locally**: `npm run dev`
+- **Develop locally**: `npm run dev`, then go to "localhost:8080"
 - **Build**: `npm run build`
 - **Watch for lint**: `npm run dev`
 - **Run tests**: `npm test`
 
 ### Deployment
 
+1. Install the project
 1. Build the project
-   > `$ npm run build`
-1. Copy the built files from `dist` to the production server.
+   > `npm run build`
+1. Copy the built files from `public` to the production server.
 
 ## FAQ
 If your question is not answered here, please send questions to [insert email address here].
