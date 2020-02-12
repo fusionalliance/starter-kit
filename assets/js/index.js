@@ -1,4 +1,6 @@
+import DataService from './DataService.js';
 import exampleComponent from './exampleComponent.js';
+import handleClick from './handleClick.js';
 import './scss';
 
 const components = [
@@ -22,8 +24,14 @@ const context = (options = {}) => {
   console.log(opts);
 
   components.forEach((component) => component(opts));
+
+  // Functions available to html event handlers (e.g. onclick)
+  return {
+    handleClick: handleClick(opts),
+  };
 };
 
-context({
+window.app = context({
+  dataService: new DataService(),
   option2: 'Overridden value 2',
 });
