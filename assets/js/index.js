@@ -1,29 +1,25 @@
-import exampleComponent from './exampleComponent.js';
-import './scss';
 
-const components = [
-  exampleComponent,
-];
+import components from './addAllComponentsHere.js';
+import eventHandlers from './addEventHandlersHere.js';
+import services from './addServicesHere.js';
 
-const context = (options = {}) => {
-  const defaultOptions = {
-    option1: 'Value 1',
-    option2: 'Value 2',
-  };
-
-  const opts = {
-    ...defaultOptions,
+const loadEverything = (options) => {
+  // Functions available to html event handlers (e.g. onclick)
+  window.app = {
     ...options,
+    ...eventHandlers,
   };
 
-  // eslint-disable-next-line no-console
-  console.log(`Options supplied: ${Object.keys(options).join(', ')}`);
-  // eslint-disable-next-line no-console
-  console.log(opts);
+  Object.keys(services).forEach((serviceName) => {
+    window.app[serviceName] = new services[serviceName]();
+  });
 
-  components.forEach((component) => component(opts));
+  components.forEach((component) => component());
 };
 
-context({
-  option2: 'Overridden value 2',
+// If you need to wait for jQuery or something, call this inside of a jQuery ready event.
+loadEverything({
+  // Global values, such as unsecured environment variables replaced at build-time
+  option1: 'Value 1',
+  option2: 'Value 2',
 });

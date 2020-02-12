@@ -7,7 +7,10 @@ const assetPath = `${basePath}/assets`;
 
 module.exports = {
   devtool: 'eval-cheap-module-source-map',
-  entry: `${assetPath}/js/index.js`,
+  entry: [
+    `${assetPath}/js/index.js`,
+    `${assetPath}/scss/app.scss`,
+  ],
   devServer: {
     port: 8080,
     contentBase: path.join(__dirname, 'public'),
@@ -21,9 +24,6 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env'],
-        },
       },
       {
         test: /\.(scss|css)$/,

@@ -13,10 +13,10 @@
     "watch:js": "webpack-dev-server --config webpack.dev.js --mode development",
     "watch:lint": "nodemon -e js,scss --exec \"npm run lint\" --ignore dist",
     "lint": "npm run eslint && npm run stylelint",
-    "eslint": "eslint 'assets/js/*.js'; exit 0",
-    "stylelint": "stylelint 'assets/scss/**/*.scss'; exit 0",
+    "eslint": "eslint 'assets/js/*.js'",
+    "stylelint": "stylelint 'assets/scss/**/*.scss'",
     "scss": "npm run build:scss -- --watch",
-    "test": "echo \"Error: no test specified\" && exit 0",
+    "test": "jest",
     "postinstall": "cp -n ./.env.sample ./.env || true"
   },
   "repository": {
@@ -54,6 +54,7 @@
     "glob": "^7.1.5",
     "handlebars-transpiler": "^1.0.3",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.13.0",
     "nodemon": "^1.19.4",
