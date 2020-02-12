@@ -1,4 +1,4 @@
-import exampleComponent from './exampleComponent.js';
+import exampleComponent from './components/exampleComponent.js';
 
 export default [
   exampleComponent,
