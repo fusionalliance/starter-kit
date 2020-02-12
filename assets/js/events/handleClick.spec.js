@@ -1,17 +1,19 @@
 import handleClick from './handleClick.js';
 
-test('handleClick should call dataService.doStuff', () => {
-  const testValue = 'something';
+describe('handleClick', () => {
+  test('should call dataService.doStuff', () => {
+    const testValue = 'something';
 
-  const mockDataService = {
-    doStuff: jest.fn(),
-  };
+    const mockDataService = {
+      doStuff: jest.fn(),
+    };
 
-  window.app = {
-    dataService: mockDataService,
-  };
+    window.app = {
+      dataService: mockDataService,
+    };
 
-  handleClick(testValue);
-  expect(mockDataService.doStuff).toHaveBeenCalledTimes(1);
-  expect(mockDataService.doStuff).toHaveBeenCalledWith(testValue);
+    handleClick(testValue);
+    expect(mockDataService.doStuff).toHaveBeenCalledTimes(1);
+    expect(mockDataService.doStuff).toHaveBeenCalledWith(testValue);
+  });
 });
