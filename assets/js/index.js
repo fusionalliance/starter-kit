@@ -1,37 +1,20 @@
 import DataService from './DataService.js';
-import exampleComponent from './exampleComponent.js';
+import components from './addAllComponentsHere';
 import handleClick from './handleClick.js';
 import './scss';
 
-const components = [
-  exampleComponent,
-];
-
-const context = (options = {}) => {
-  const defaultOptions = {
-    option1: 'Value 1',
-    option2: 'Value 2',
-  };
-
-  const opts = {
-    ...defaultOptions,
+const loadEverything = (options) => {
+  // Functions available to html event handlers (e.g. onclick)
+  window.app = {
     ...options,
   };
 
-  // eslint-disable-next-line no-console
-  console.log(`Options supplied: ${Object.keys(options).join(', ')}`);
-  // eslint-disable-next-line no-console
-  console.log(opts);
-
-  components.forEach((component) => component(opts));
-
-  // Functions available to html event handlers (e.g. onclick)
-  return {
-    handleClick: handleClick(opts),
-  };
+  components.forEach((component) => component());
 };
 
-window.app = context({
+loadEverything({
   dataService: new DataService(),
-  option2: 'Overridden value 2',
+  handleClick,
+  option1: 'Value 1',
+  option2: 'Value 2',
 });

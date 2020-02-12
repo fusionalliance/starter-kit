@@ -1,5 +1,3 @@
-export default function loadHandleClick({ dataService }) {
-  return function handleClick(value) {
-    dataService.doStuff(value);
-  };
+export default function handleClick(value) {
+  app.dataService.doStuff(value);
 }

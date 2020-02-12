@@ -1,4 +1,4 @@
-import load from './exampleComponent';
+import component from './exampleComponent';
 
 describe('exampleComponent', () => {
   const option1 = 'something';
@@ -8,7 +8,7 @@ describe('exampleComponent', () => {
     doStuff: jest.fn(),
   };
 
-  const opts = {
+  window.app = {
     dataService: mockDataService,
     option1,
     option2,
@@ -19,7 +19,8 @@ describe('exampleComponent', () => {
     <div class="example-component"></div>
   </body></html>`;
 
-  load(opts);
+  // Load component
+  component();
 
   const exampleComponents = document.querySelectorAll('.example-component');
 

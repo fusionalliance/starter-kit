@@ -11,6 +11,7 @@ module.exports = {
     }],
   },
   globals: {
+    app: true,
     document: true
   },
 };

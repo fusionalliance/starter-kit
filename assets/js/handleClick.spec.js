@@ -1,4 +1,4 @@
-import load from './handleClick.js';
+import handleClick from './handleClick.js';
 
 test('handleClick should call dataService.doStuff', () => {
   const testValue = 'something';
@@ -7,11 +7,10 @@ test('handleClick should call dataService.doStuff', () => {
     doStuff: jest.fn(),
   };
 
-  const opts = {
+  window.app = {
     dataService: mockDataService,
   };
 
-  const handleClick = load(opts);
   handleClick(testValue);
   expect(mockDataService.doStuff).toHaveBeenCalledTimes(1);
   expect(mockDataService.doStuff).toHaveBeenCalledWith(testValue);
