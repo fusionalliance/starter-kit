@@ -7,4 +7,4 @@ DataService.prototype.doStuff = function doStuff(...params) {
 // Common methods would be DataService.prototype.getData() for data retrieval
 // or DataService.prototype.submit(data) for form submission
 
-module.exports = DataService;
+export default DataService;
