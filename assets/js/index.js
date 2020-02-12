@@ -2,7 +2,6 @@
 import components from './addAllComponentsHere.js';
 import eventHandlers from './addEventHandlersHere.js';
 import services from './addServicesHere.js';
-import './scss';
 
 const loadEverything = (options) => {
   // Functions available to html event handlers (e.g. onclick)

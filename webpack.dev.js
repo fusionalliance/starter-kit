@@ -7,7 +7,10 @@ const assetPath = `${basePath}/assets`;
 
 module.exports = {
   devtool: 'eval-cheap-module-source-map',
-  entry: `${assetPath}/js/index.js`,
+  entry: [
+    `${assetPath}/js/index.js`,
+    `${assetPath}/scss/app.scss`,
+  ],
   devServer: {
     port: 8080,
     contentBase: path.join(__dirname, 'public'),
