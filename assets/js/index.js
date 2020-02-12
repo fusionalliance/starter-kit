@@ -12,6 +12,7 @@ const loadEverything = (options) => {
   components.forEach((component) => component());
 };
 
+// If you need to wait for jQuery or something, call this inside of a jQuery ready event.
 loadEverything({
   dataService: new DataService(),
   handleClick,
