@@ -1,5 +1,9 @@
 module.exports = {
   extends: 'airbnb-base',
+  env: {
+    browser: true,
+    jest: true,
+  },
   rules: {
     'import/extensions': ['off'],
     'import/no-extraneous-dependencies': ['error', {
@@ -7,6 +11,7 @@ module.exports = {
     }],
   },
   globals: {
+    app: true,
     document: true
-  }
+  },
 };

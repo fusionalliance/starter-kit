@@ -17,7 +17,7 @@
     "eslint": "eslint 'assets/js/*.js'",
     "stylelint": "stylelint 'assets/scss/**/*.scss'",
     "scss": "npm run build:scss -- --watch",
-    "test": "echo \"Error: no test specified\" && exit 0",
+    "test": "jest",
     "postinstall": "cp -n ./.env.sample ./.env || true"
   },
   "repository": {
@@ -56,6 +56,7 @@
     "handlebars-transpiler": "^1.0.3",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^3.1.0",
+    "jest": "^24.9.0",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.13.0",
     "nodemon": "^1.19.4",

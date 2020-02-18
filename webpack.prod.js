@@ -13,7 +13,10 @@ const buildPath = path.resolve(__dirname, 'public');
 
 module.exports = {
   devtool: 'source-map',
-  entry: `${assetPath}/js/index.js`,
+  entry: [
+    `${assetPath}/js/index.js`,
+    `${assetPath}/scss/app.scss`,
+  ],
   output: {
     filename: '[name].[hash:20].js',
     path: buildPath,
@@ -27,9 +30,6 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env'],
-        },
       },
       {
         test: /\.(scss|css|sass)$/,

@@ -2,4 +2,8 @@
   padding: 32px;
   background-color: black;
   color: white;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

@@ -16,6 +16,7 @@ jobs:
           name: "Show node version"
           command: |
             node --version
+            npm --version
   lint:
     <<: *defaults
     steps:
