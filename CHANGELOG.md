@@ -8,9 +8,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [1.0.0] - XXXX-XX-XX
 ### Added
 
+- Update strategy in README_TEMPLATE.md
+- Automated linting in pull requests
 
 ### Changed
 
+- Updated ROADMAP.md
 
 ### Deprecated
 
