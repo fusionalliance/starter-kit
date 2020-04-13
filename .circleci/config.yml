@@ -16,19 +16,22 @@ jobs:
           name: "Show node version"
           command: |
             node --version
+            npm --version
   lint:
     <<: *defaults
     steps:
       - checkout
       - run:
-          command:
+          command: |
+            npm install
             npm run lint
   unit_tests:
     <<: *defaults
     steps:
       - checkout
       - run:
-          command:
+          command: |
+            npm install
             npm test
 
 workflows:
