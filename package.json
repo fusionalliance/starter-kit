@@ -18,6 +18,7 @@
     "stylelint": "stylelint 'assets/scss/**/*.scss'",
     "scss": "npm run build:scss -- --watch",
     "test": "jest",
+    "test:accessibility": "pa11y http://localhost:8080/",
     "postinstall": "cp -n ./.env.sample ./.env || true"
   },
   "repository": {
