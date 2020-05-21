@@ -75,7 +75,7 @@ Create a consistent developer experience for projects requiring a static website
   - Minification ~~[#9](https://github.com/fusionalliance/starter-kit/pull/9)~~
   - **Status**: In review. HBS, JS, and SCSS builds complete. Image optimization pending.
 * Quality assurance
-  - Accessibility (e.g. pa11y)
+  - Accessibility (e.g. pa11y) [#27](https://github.com/fusionalliance/starter-kit/pull/27)
   - Lint scripts ~~[#12](https://github.com/fusionalliance/starter-kit/pull/12)~~
   - Commit hooks (e.g. Husky, prettier, eslint fix) ~~[#12](https://github.com/fusionalliance/starter-kit/pull/12)~~
   - Functional testing process and reviews
