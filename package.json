@@ -17,8 +17,9 @@
     "eslint": "eslint 'assets/js/*.js'",
     "stylelint": "stylelint 'assets/scss/**/*.scss'",
     "scss": "npm run build:scss -- --watch",
-    "test": "jest && node ./scripts/run_pa11y.js",
-    "test:accessibility": "pa11y-ci",
+    "start": "http-server public",
+    "test": "jest && npm run test:accessibility",
+    "test:accessibility": "npm run build && start-server-and-test start 8080 pa11y-ci",
     "postinstall": "cp -n ./.env.sample ./.env || true"
   },
   "repository": {
@@ -56,6 +57,7 @@
     "glob": "^7.1.5",
     "handlebars-transpiler": "^1.0.3",
     "html-webpack-plugin": "^3.2.0",
+    "http-server": "^0.12.3",
     "husky": "^3.1.0",
     "jest": "^26.0.1",
     "mini-css-extract-plugin": "^0.5.0",
@@ -67,6 +69,7 @@
     "postcss-loader": "^2.1.3",
     "sass-loader": "^6.0.7",
     "source-map-loader": "^0.2.3",
+    "start-server-and-test": "^1.11.0",
     "style-loader": "^0.20.3",
     "stylelint": "^11.1.1",
     "stylelint-config-recommended": "^3.0.0",
