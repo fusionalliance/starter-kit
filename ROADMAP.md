@@ -60,26 +60,26 @@ Starting from scratch, create standard configuration that can be used with almos
 Create a consistent developer experience for projects requiring a static website deployment.
 
 * Development server
-  - Live-reload ~~[#9](https://github.com/quicksolutions/starter-kit/pull/9)~~
-  - Preview of static build ~~[#9](https://github.com/quicksolutions/starter-kit/pull/9)~~
+  - Live-reload ~~[#9](https://github.com/fusionalliance/starter-kit/pull/9)~~
+  - Preview of static build ~~[#9](https://github.com/fusionalliance/starter-kit/pull/9)~~
   - **Status**: Done.
 * Update strategy
-  - version control ~~[#8](https://github.com/quicksolutions/starter-kit/pull/8)~~
-  - merge workflow (e.g. Gitflow) ~~[#8](https://github.com/quicksolutions/starter-kit/pull/8)~~
+  - version control ~~[#8](https://github.com/fusionalliance/starter-kit/pull/8)~~
+  - merge workflow (e.g. Gitflow) ~~[#8](https://github.com/fusionalliance/starter-kit/pull/8)~~
   - **Status**: Done.
 * Build process
-  - HTML pre-rendering ~~[#9](https://github.com/quicksolutions/starter-kit/pull/9)~~
-  - Script bundling ~~[#9](https://github.com/quicksolutions/starter-kit/pull/9)~~
-  - CSS pre-processing ~~[#9](https://github.com/quicksolutions/starter-kit/pull/9)~~ ~~[#11](https://github.com/quicksolutions/starter-kit/pull/11)~~
-  - Image optimization [#26](https://github.com/quicksolutions/starter-kit/pull/26)
-  - Minification ~~[#9](https://github.com/quicksolutions/starter-kit/pull/9)~~
+  - HTML pre-rendering ~~[#9](https://github.com/fusionalliance/starter-kit/pull/9)~~
+  - Script bundling ~~[#9](https://github.com/fusionalliance/starter-kit/pull/9)~~
+  - CSS pre-processing ~~[#9](https://github.com/fusionalliance/starter-kit/pull/9)~~ ~~[#11](https://github.com/fusionalliance/starter-kit/pull/11)~~
+  - Image optimization [#26](https://github.com/fusionalliance/starter-kit/pull/26)
+  - Minification ~~[#9](https://github.com/fusionalliance/starter-kit/pull/9)~~
   - **Status**: In review. HBS, JS, and SCSS builds complete. Image optimization pending.
 * Quality assurance
-  - Accessibility (e.g. pa11y)
-  - Lint scripts ~~[#12](https://github.com/quicksolutions/starter-kit/pull/12)~~
-  - Commit hooks (e.g. Husky, prettier, eslint fix) ~~[#12](https://github.com/quicksolutions/starter-kit/pull/12)~~
+  - Accessibility (e.g. pa11y) ~~[#27](https://github.com/fusionalliance/starter-kit/pull/27)~~
+  - Lint scripts ~~[#12](https://github.com/fusionalliance/starter-kit/pull/12)~~
+  - Commit hooks (e.g. Husky, prettier, eslint fix) ~~[#12](https://github.com/fusionalliance/starter-kit/pull/12)~~
   - Functional testing process and reviews
-  - Automated testing framework(s), configuration, and usage example(s) (e.g. Jest, Cypress.io) ~~[#13](https://github.com/quicksolutions/starter-kit/pull/13)~~
+  - Automated testing framework(s), configuration, and usage example(s) (e.g. Jest, Cypress.io) ~~[#13](https://github.com/fusionalliance/starter-kit/pull/13)~~
   - **Status**: All done except automated accessibility testing and functional testing process.
 
 ## Phase 2: Front End Frameworks
