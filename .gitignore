@@ -34,8 +34,9 @@ logs
 build/Release
 
 # Build Output
-/dist
 /build
+/dist
+/public
 .cache
 .grunt
 .next

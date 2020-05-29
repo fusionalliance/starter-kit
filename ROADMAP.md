@@ -27,55 +27,60 @@ The following subitems should be used to maintain visibility into starter kit de
 
 ## Phase 0: Universal Configuration
 
+These changes were implemented in https://github.com/quicksolutions/starter-kit/pull/1.
+
 Starting from scratch, create standard configuration that can be used with almost every web project.
 
 * Environment configuration
-  - `.editorconfig`
-  - `.gitignore`
+  - `.editorconfig` ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
+  - `.gitignore` ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
+  - **Status**: Complete
 * Javascript configuration
-  - `.eslintrc.js`
-  - `.eslintignore`
+  - `.eslintrc.js` ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
+  - `.eslintignore` ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
+  - **Status**: Complete
 * Stylesheet configuration
-  - Sass architecture specifications (e.g. 7+1, @use vs. @import)
-  - `.stylelintrc.js`
+  - Sass architecture specifications (e.g. 7+1, @use vs. @import) ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
+  - `.stylelintrc.js` ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
+  - **Status**: Complete
 * Lint scripts
-  - `eslint`
-  - `stylelint`
+  - `eslint` ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
+  - `stylelint` ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
+  - **Status**: Complete
 * Documentation
-  - `README.md`
+  - `README.md` ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
     - Standard data formats
-  - `CHANGELOG.md`
-  - Versioning strategy
-  - Contribution instructions
-
-These changes were implemented in https://github.com/quicksolutions/starter-kit/pull/1.
+  - `CHANGELOG.md` ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
+  - Versioning strategy ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
+  - Contribution instructions ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
+  - **Status**: Complete
 
 ## Phase 1: Pre-rendered Static Websites
 
 Create a consistent developer experience for projects requiring a static website deployment.
 
 * Development server
-  - Live-reload
-  - Preview of static build
-  - **Status**: In progress.
+  - Live-reload ~~[#9](https://github.com/fusionalliance/starter-kit/pull/9)~~
+  - Preview of static build ~~[#9](https://github.com/fusionalliance/starter-kit/pull/9)~~
+  - **Status**: Done.
 * Update strategy
-  - version control
-  - merge workflow (e.g. Gitflow)
-  - **Status**: PR created: https://github.com/quicksolutions/starter-kit/pull/8
+  - version control ~~[#8](https://github.com/fusionalliance/starter-kit/pull/8)~~
+  - merge workflow (e.g. Gitflow) ~~[#8](https://github.com/fusionalliance/starter-kit/pull/8)~~
+  - **Status**: Done.
 * Build process
-  - HTML pre-rendering
-  - Script bundling
-  - CSS pre-processing
-  - Image optimization
-  - Minification
-  - **Status**: In progress. SCSS build complete, but needs merged into a Webpack build. Decision made on: Webpack for script bundling and css pre-processing, Handlebars for HTML pre-rendering.
+  - HTML pre-rendering ~~[#9](https://github.com/fusionalliance/starter-kit/pull/9)~~
+  - Script bundling ~~[#9](https://github.com/fusionalliance/starter-kit/pull/9)~~
+  - CSS pre-processing ~~[#9](https://github.com/fusionalliance/starter-kit/pull/9)~~ ~~[#11](https://github.com/fusionalliance/starter-kit/pull/11)~~
+  - Image optimization [#26](https://github.com/fusionalliance/starter-kit/pull/26)
+  - Minification ~~[#9](https://github.com/fusionalliance/starter-kit/pull/9)~~
+  - **Status**: In review. HBS, JS, and SCSS builds complete. Image optimization pending.
 * Quality assurance
-  - Accessibility (e.g. pa11y)
-  - Lint scripts
-  - Commit hooks (e.g. Husky, prettier, eslint fix)
+  - Accessibility (e.g. pa11y) ~~[#27](https://github.com/fusionalliance/starter-kit/pull/27)~~
+  - Lint scripts ~~[#12](https://github.com/fusionalliance/starter-kit/pull/12)~~
+  - Commit hooks (e.g. Husky, prettier, eslint fix) ~~[#12](https://github.com/fusionalliance/starter-kit/pull/12)~~
   - Functional testing process and reviews
-  - Automated testing framework(s), configuration, and usage example(s) (e.g. Jest, Cypress.io)
-  - **Status**: Pending
+  - Automated testing framework(s), configuration, and usage example(s) (e.g. Jest, Cypress.io) ~~[#13](https://github.com/fusionalliance/starter-kit/pull/13)~~
+  - **Status**: All done except automated accessibility testing and functional testing process.
 
 ## Phase 2: Front End Frameworks
 

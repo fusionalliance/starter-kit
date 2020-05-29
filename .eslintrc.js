@@ -1,3 +1,17 @@
 module.exports = {
-  "extends": "airbnb-base"
+  extends: 'airbnb-base',
+  env: {
+    browser: true,
+    jest: true,
+  },
+  rules: {
+    'import/extensions': ['off'],
+    'import/no-extraneous-dependencies': ['error', {
+      devDependencies: true,
+    }],
+  },
+  globals: {
+    app: true,
+    document: true
+  },
 };

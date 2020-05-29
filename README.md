@@ -29,6 +29,14 @@ A separate [Roadmap doc](ROADMAP.md) has been created to manage the phases of de
 
 ## Usage
 
+### Scripts
+
+- **Install server and website**: `npm install`
+- **Develop locally**: `npm run dev`
+- **Build**: `npm run build`
+- **Watch for lint**: `npm run dev`
+- **Run tests**: `npm test`
+
 ### SCSS
 - Uses the [The 7-1 Pattern](https://sass-guidelin.es/#the-7-1-pattern) for architecture
 - Generally follows [Sass Guidelines](https://sass-guidelin.es/#the-7-1-pattern) for code style
@@ -36,7 +44,6 @@ A separate [Roadmap doc](ROADMAP.md) has been created to manage the phases of de
 
 ### Image Minification
 - Currently requires libpng, which you can install via homebrew `brew install libpng`
-
 
 ## FAQ
 

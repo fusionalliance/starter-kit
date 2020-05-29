@@ -4,7 +4,7 @@ defaults: &defaults
   working_directory: /tmp/starter-kit
   docker:
     # specify the version you desire here
-    - image: circleci/node:8.12.0-browsers
+    - image: circleci/node:12.16.3-browsers
 
 version: 2
 jobs:
@@ -16,19 +16,22 @@ jobs:
           name: "Show node version"
           command: |
             node --version
+            npm --version
   lint:
     <<: *defaults
     steps:
       - checkout
       - run:
-          command:
+          command: |
+            npm install
             npm run lint
   unit_tests:
     <<: *defaults
     steps:
       - checkout
       - run:
-          command:
+          command: |
+            npm install
             npm test
 
 workflows:
