@@ -68,7 +68,7 @@ module.exports = {
         use: [{
           loader: 'url-loader',
           options: {
-            name: '[path][name].[hash:10].[ext]',
+            name: '[path][name].[ext]',
             limit: 10240,
           },
         }],
@@ -76,16 +76,16 @@ module.exports = {
       {
         test: /\.(gif|png|jpe?g|svg|webp)$/i,
         use: [
-          'file-loader?name=[path][name].[hash:10].[ext]',
+          'file-loader?name=[path][name].[ext]',
           {
             loader: 'image-webpack-loader',
             options: {
               bypassOnDebug: false,
               disable: false,
               // TODO: webp works, but currently freaks out other image types if enabled (still valid file but will break in Finder)
-              // webp: {
-              //   quality: 60,
-              // },
+              webp: {
+                quality: 60,
+              },
             },
           },
         ],

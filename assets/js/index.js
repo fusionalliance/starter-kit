@@ -17,8 +17,8 @@ imagePng.src = FPOPNG;
 const imageSvg = new Image();
 imageSvg.src = FPOSVG;
 
-const imageWebp = new Image();
-imageWebp.src = FPOWEBP;
+// const imageWebp = new Image();
+// imageWebp.src = FPOWEBP;
 
 import components from './addAllComponentsHere.js';
 import eventHandlers from './addEventHandlersHere.js';
