@@ -1,15 +1,26 @@
 const Dotenv = require('dotenv-webpack');
+const fs = require('fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 const basePath = '.';
 const assetPath = `${basePath}/assets`;
 
+const walkSync = (d) => fs.statSync(d).isDirectory() ? fs.readdirSync(d).map(f => walkSync(path.join(d, f))).flat().map((file) => `./${file}`) : [d];
+const getAllFilesWithExtensions = (dir, extensions) => walkSync(dir).filter((file) => extensions.some((ext) => file.endsWith(ext)))
+
 module.exports = {
   devtool: 'eval-cheap-module-source-map',
   entry: [
     `${assetPath}/js/index.js`,
     `${assetPath}/scss/app.scss`,
+    ...getAllFilesWithExtensions(`${assetPath}/img`, [
+      '.gif',
+      '.jpeg',
+      '.jpg',
+      '.svg',
+      '.webp',
+    ]),
   ],
   devServer: {
     port: 8080,
