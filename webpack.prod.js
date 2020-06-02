@@ -20,6 +20,8 @@ module.exports = {
   entry: [
     `${assetPath}/js/index.js`,
     `${assetPath}/scss/app.scss`,
+    // Comment this out if your javascript framework is replacing your image references for you.
+    // Import them in your javascript instead.
     ...getAllFilesWithExtensions(`${assetPath}/img`, [
       '.gif',
       '.jpeg',
@@ -73,17 +75,18 @@ module.exports = {
           },
         ],
       },
-      // Load all images as base64 encoding if they are smaller than 10KB
-      {
-        test: /\.(jpe?g|png|gif)$/,
-        use: [{
-          loader: 'url-loader',
-          options: {
-            name: '[path][name].[ext]',
-            limit: 10240,
-          },
-        }],
-      },
+      // Uncomment the below section if a javascript framework is replacing your image references for you
+      // // Load all images as base64 encoding if they are smaller than 10KB
+      // {
+      //   test: /\.(jpe?g|png|gif)$/,
+      //   use: [{
+      //     loader: 'url-loader',
+      //     options: {
+      //       name: '[path][name].[ext]',
+      //       limit: 10240,
+      //     },
+      //   }],
+      // },
       {
         test: /\.(gif|png|jpe?g|svg|webp)$/i,
         use: [
