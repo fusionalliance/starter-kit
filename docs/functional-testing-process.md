@@ -7,7 +7,7 @@ artifacts should be generated as part of the process.
 
 - [Prerequisites](#prerequisites)
 - [Process](#process)
-- [Disclaimers](#disclaimers)
+- [Important Notes](#important-notes)
 - [Templates](#templates)
 
 ## Prerequisites
@@ -31,7 +31,7 @@ This is the general process for functionally testing a project.
 At the end of running a round of tests, each functional requirement of the project should be either validated or invalidated, and there should
 be actionable bugs for each of the failures.
 
-### ⚠️ IMPORTANT NOTES
+## ⚠️ IMPORTANT NOTES
 
 - **Revise all test scripts to keep them up to date as requirements change during the life of the project.**
 - **Re-run any test script after bug fixes are implemented.**
