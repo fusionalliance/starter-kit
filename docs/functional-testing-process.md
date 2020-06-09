@@ -7,7 +7,7 @@ artifacts should be generated as part of the process.
 
 - [Prerequisites](#prerequisites)
 - [Process](#process)
-- [Important Notes](#⚠️-important-notes)
+- [Important Notes](#%EF%B8%8F-important-notes)
 - [Templates](#templates)
 
 ## Prerequisites
