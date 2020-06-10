@@ -39,5 +39,5 @@ be actionable bugs for each of the failures.
    
 ## Templates
 
-- [functional-requirements-template.xls](./templates/functional-requirements-template.xls)
+- [functional-requirements-template.xlsx](./templates/functional-requirements-template.xlsx)
 - [functional-test-script-template.docx](./templates/functional-test-script-template.docx)
