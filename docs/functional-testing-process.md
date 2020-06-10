@@ -27,6 +27,7 @@ This is the general process for functionally testing a project.
 1. Document the actual result or output for each specific step.
 1. If all actual results match all expected results, the feature is validated and testing passes. If not all actual results
    match the expected results, the feature has failed testing, and each failure should be tracked as a bug ticket.
+   - If no formal bug-tracking exists for the project, a spreadsheet which itemizes each bug in a client-shared folder or Fusion Teams will suffice.
    
 At the end of running a round of tests, each functional requirement of the project should be either validated or invalidated, and there should
 be actionable bugs for each of the failures.
