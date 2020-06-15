@@ -6,28 +6,23 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [1.0.0] - XXXX-XX-XX
+
 ### Added
 
+- Development server with live-reload
+- Build process
+- Templates for README, CHANGELOG, functional testing scripts, and functional requirements
 - Update strategy in README_TEMPLATE.md
-- Automated linting in pull requests
+- Automated quality assurance via continuous integration in pull requests
+- Manual quality assurance via functional testing and code review guidelines
 
 ### Changed
 
-- Updated ROADMAP.md
-
-### Deprecated
-
-
-### Removed
-
-
-### Fixed
-
-
-### Security
-
+- ROADMAP.md itemized statuses
+- README.md scripts
 
 ## [0.1.0] - 2019-11-18
+
 ### Added
 
 - Standard javascript configuration
