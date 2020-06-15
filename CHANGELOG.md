@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 
+- Componentized template, script, and style examples
 - Development server with live-reload
 - Build process
 - Templates for README, CHANGELOG, functional testing scripts, and functional requirements
