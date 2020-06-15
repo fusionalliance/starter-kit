@@ -18,12 +18,14 @@ Enforcing a consistent approach to start up new projects at Fusion Alliance.
 - Maintain consistent tooling across projects
 - Enforce standards
 - Accelerate project start-up
+- Outline delivery quality processes
 
 ## Features
 
 - Code formatting enforced with EditorConfig
 - JS linting with ESLint + AirBnB
 - Sass (SCSS) + Stylelint > CSS
+- Delivery quality [processes + templates](./docs/)
 
 ## Roadmap
 

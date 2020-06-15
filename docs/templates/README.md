@@ -1,3 +1,3 @@
-# Templates
+# Delivery Quality Templates
 
-This directory is for project documents templates.
+This directory is for templates relating to delivering quality digital products.
