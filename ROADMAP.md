@@ -78,9 +78,9 @@ Create a consistent developer experience for projects requiring a static website
   - Accessibility (e.g. pa11y) ~~[#27](https://github.com/fusionalliance/starter-kit/pull/27)~~
   - Lint scripts ~~[#12](https://github.com/fusionalliance/starter-kit/pull/12)~~
   - Commit hooks (e.g. Husky, prettier, eslint fix) ~~[#12](https://github.com/fusionalliance/starter-kit/pull/12)~~
-  - Functional testing process and reviews
+  - Functional testing process and reviews ~~[#29](https://github.com/fusionalliance/starter-kit/pull/29)~~
   - Automated testing framework(s), configuration, and usage example(s) (e.g. Jest, Cypress.io) ~~[#13](https://github.com/fusionalliance/starter-kit/pull/13)~~
-  - **Status**: All done except automated accessibility testing and functional testing process.
+  - **Status**: Done.
 
 ## Phase 2: Front End Frameworks
 
