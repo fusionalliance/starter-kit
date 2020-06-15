@@ -66,7 +66,7 @@ Create a consistent developer experience for projects requiring a static website
 * Update strategy
   - version control ~~[#8](https://github.com/fusionalliance/starter-kit/pull/8)~~
   - merge workflow (e.g. Gitflow) ~~[#8](https://github.com/fusionalliance/starter-kit/pull/8)~~
-  - **Status**: Done.
+  - **Status**: Complete
 * Build process
   - HTML pre-rendering ~~[#9](https://github.com/fusionalliance/starter-kit/pull/9)~~
   - Script bundling ~~[#9](https://github.com/fusionalliance/starter-kit/pull/9)~~
