@@ -79,6 +79,23 @@ module.exports = {
       //   }],
       // },
       {
+        test: /\.(gif|png|jpe?g|svg|webp)$/i,
+        use: [
+          'file-loader?name=[path][name].[ext]',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: false,
+              disable: false,
+              // TODO: webp works, but currently freaks out other image types if enabled (still valid file but will break in Finder)
+              webp: {
+                quality: 60,
+              },
+            },
+          },
+        ],
+      },
+      {
         // Load all icons
         test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
         use: [{
