@@ -73,7 +73,7 @@ Create a consistent developer experience for projects requiring a static website
   - CSS pre-processing ~~[#9](https://github.com/fusionalliance/starter-kit/pull/9)~~ ~~[#11](https://github.com/fusionalliance/starter-kit/pull/11)~~
   - Image optimization ~~[#26](https://github.com/fusionalliance/starter-kit/pull/26)~~
   - Minification ~~[#9](https://github.com/fusionalliance/starter-kit/pull/9)~~
-  - **Status**: In review. HBS, JS, and SCSS builds complete. Image optimization pending.
+  - **Status**: Complete
 * Quality assurance
   - Accessibility (e.g. pa11y) ~~[#27](https://github.com/fusionalliance/starter-kit/pull/27)~~
   - Lint scripts ~~[#12](https://github.com/fusionalliance/starter-kit/pull/12)~~
