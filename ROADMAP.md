@@ -80,7 +80,7 @@ Create a consistent developer experience for projects requiring a static website
   - Commit hooks (e.g. Husky, prettier, eslint fix) ~~[#12](https://github.com/fusionalliance/starter-kit/pull/12)~~
   - Functional testing process and reviews ~~[#29](https://github.com/fusionalliance/starter-kit/pull/29)~~
   - Automated testing framework(s), configuration, and usage example(s) (e.g. Jest, Cypress.io) ~~[#13](https://github.com/fusionalliance/starter-kit/pull/13)~~
-  - **Status**: Done.
+  - **Status**: Complete
 
 ## Phase 2: Front End Frameworks
 
