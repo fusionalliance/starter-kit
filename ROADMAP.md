@@ -62,7 +62,7 @@ Create a consistent developer experience for projects requiring a static website
 * Development server
   - Live-reload ~~[#9](https://github.com/fusionalliance/starter-kit/pull/9)~~
   - Preview of static build ~~[#9](https://github.com/fusionalliance/starter-kit/pull/9)~~
-  - **Status**: Done.
+  - **Status**: Complete
 * Update strategy
   - version control ~~[#8](https://github.com/fusionalliance/starter-kit/pull/8)~~
   - merge workflow (e.g. Gitflow) ~~[#8](https://github.com/fusionalliance/starter-kit/pull/8)~~
