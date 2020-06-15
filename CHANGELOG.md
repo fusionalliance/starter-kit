@@ -9,20 +9,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 
+- Componentized template, script, and style examples
+- Development server with live-reload
+- Build process
+- Templates for README, CHANGELOG, functional testing scripts, and functional requirements
 - Update strategy in README_TEMPLATE.md
-- Automated linting in pull requests
+- Automated quality assurance via continuous integration in pull requests
+- Manual quality assurance via functional testing and code review guidelines
 
 ### Changed
 
-- Updated ROADMAP.md
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
+- ROADMAP.md itemized statuses
+- README.md scripts
 
 ## [0.1.0] - 2019-11-18
 
