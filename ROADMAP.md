@@ -25,7 +25,7 @@ The following subitems should be used to maintain visibility into starter kit de
 * If a Pull Request has been created for an item, add `PR: [link]`.
 * If an item has a lack of consensus, create a PR subitem for each option. Add a subitem of `**Tabled**: [description]` with a description of the disagreement. This should be discussed with wider input or at a dedicated meeting.
 
-## Phase 0: Universal Configuration
+## ✅ Phase 0: Universal Configuration
 
 These changes were implemented in [https://github.com/quicksolutions/starter-kit/pull/1](https://github.com/quicksolutions/starter-kit/pull/1).
 
@@ -55,7 +55,7 @@ Starting from scratch, create standard configuration that can be used with almos
   * Contribution instructions ~~[#1](https://github.com/quicksolutions/starter-kit/pull/1)~~
   * **Status**: Complete
 
-## Phase 1: Pre-rendered Static Websites
+## ✅ Phase 1: Pre-rendered Static Websites
 
 Create a consistent developer experience for projects requiring a static website deployment.
 
@@ -82,7 +82,7 @@ Create a consistent developer experience for projects requiring a static website
   * Automated testing framework(s), configuration, and usage example(s) (e.g. Jest, Cypress.io) ~~[#13](https://github.com/fusionalliance/starter-kit/pull/13)~~
   * **Status**: Complete
 
-## Phase 2: Front End Frameworks
+## 🚧 Phase 2: Front End Frameworks
 
 Use generator to apply configuration to front end frameworks.
 
@@ -95,7 +95,7 @@ Use generator to apply configuration to front end frameworks.
   * Configuration applied to framework via utility
   * Automated testing scripts
 
-## Phase 3: Full Stack Applications
+## 🚧 Phase 3: Full Stack Applications
 
 Add standard backend including web services and data storage.
 
