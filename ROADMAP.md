@@ -1,6 +1,6 @@
 # Plan for Starter Kit(s)
 
-_Contributors: Tim Gardner, Travis Moser (chair), David Ragsdale, Dustin Rea_
+Contributors: _Tim Gardner, Travis Moser (chair), David Ragsdale, Dustin Rea_
 
 This document outlines the plan for providing consistent approaches to start up new projects at Fusion Alliance. Specific projects might require deviations from outlined starters, so none of the following is mandated in order to create a new project. The effort is split up into phases:
 
@@ -27,7 +27,7 @@ The following subitems should be used to maintain visibility into starter kit de
 
 ## Phase 0: Universal Configuration
 
-These changes were implemented in https://github.com/quicksolutions/starter-kit/pull/1.
+These changes were implemented in [https://github.com/quicksolutions/starter-kit/pull/1](https://github.com/quicksolutions/starter-kit/pull/1).
 
 Starting from scratch, create standard configuration that can be used with almost every web project.
 
