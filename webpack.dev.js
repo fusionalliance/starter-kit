@@ -80,7 +80,7 @@ module.exports = {
       //   }],
       // },
       {
-        test: /\.(gif|png|jpe?g|svg|webp)$/i,
+        test: /\.(gif|png|jpe?g|webp)$/i,
         use: [
           'file-loader?name=[path][name].[ext]',
           {
