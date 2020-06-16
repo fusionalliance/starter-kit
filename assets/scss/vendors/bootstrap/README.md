@@ -1,7 +1,12 @@
 # Bootstrap
 
-Bootstrap is installed as a project dev dependency. Currently, only styles for [Reboot](https://getbootstrap.com/docs/4.3/content/reboot/), the [Grid stystem](https://getbootstrap.com/docs/4.3/layout/grid/), [Utliities](https://getbootstrap.com/docs/4.3/utilities/borders/), print styles, and their supporting files are imported in `_bootstrap.scss` as a base.
-```SCSS
+Bootstrap is installed as a project dev dependency. Currently, only styles for
+[Reboot](https://getbootstrap.com/docs/4.3/content/reboot/), the
+[Grid system](https://getbootstrap.com/docs/4.3/layout/grid/),
+[Utliities](https://getbootstrap.com/docs/4.3/utilities/borders/), print styles,
+and their supporting files are imported in `_bootstrap.scss` as a base.
+
+```scss
 /*!
   * Bootstrap v4.3.1 (https://getbootstrap.com/)
   * Copyright 2011-2019 The Bootstrap Authors
@@ -19,9 +24,11 @@ Bootstrap is installed as a project dev dependency. Currently, only styles for [
 @import "~bootstrap/scss/print";
 ```
 
-
 ## Importing all Bootstrap styles
-If all components are required, replace the contents of `_bootstrap.scss` with the following.
+
+If all components are required, replace the contents of `_bootstrap.scss` with
+the following.
+
 ```SCSS
 /*!
   * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -33,9 +40,10 @@ If all components are required, replace the contents of `_bootstrap.scss` with t
 @import "~bootstrap/scss/bootstrap.scss";
 ```
 
-
 ## Customizing Bootstrap import
-If some, but not all components are required, replace the contents of `_bootstrap.scss` with the following, removing unneeded imports.
+
+If some, but not all components are required, replace the contents of
+`_bootstrap.scss` with the following, removing unneeded imports.
 
 ```SCSS
 /*!

@@ -2,13 +2,18 @@
 
 ## 7-1 Boilerplate
 
-This is a sample project using the [7-1 architecture pattern](http://sass-guidelin.es/#architecture) and sticking to [Sass Guidelines](http://sass-guidelin.es) writing conventions.
+This is a sample project using the
+[7-1 architecture pattern](http://sass-guidelin.es/#architecture) and sticking
+to [Sass Guidelines](http://sass-guidelin.es) writing conventions.
 
-Each folder of this project has its own `README.md` file to explain the purpose and add extra information. Be sure to browse the repository to see how it works.
+Each folder of this project has its own `README.md` file to explain the purpose
+and add extra information. Be sure to browse the repository to see how it works.
 
-We're using the 7-1 pattern: 7 folders, 1 file. Basically, you have all your partials stuffed into 7 different folders, and a single file at the root level (in our case named app.scss) which imports them all to be compiled into a CSS file.
+We're using the 7-1 pattern: 7 folders, 1 file. Basically, you have all your
+partials stuffed into 7 different folders, and a single file at the root level
+(in our case named app.scss) which imports them all to be compiled into a CSS file.
 
-```
+```scss
 sass/
 |
 |– abstracts/
@@ -58,18 +63,27 @@ sass/
 
 ### Main file
 
-The main file (usually labelled `app.scss`) should be the only Sass file from the whole code base not to begin with an underscore. This file should not contain anything but `@import` and comments.
+The main file (usually labelled `app.scss`) should be the only Sass file from
+the whole code base not to begin with an underscore. This file should not
+contain anything but `@import` and comments.
 
-Reference: [Sass Guidelines](http://sass-guidelin.es/) > [Architecture](http://sass-guidelin.es/#architecture) > [Main file](http://sass-guidelin.es/#main-file)
+Reference: [Sass Guidelines](http://sass-guidelin.es/) >
+[Architecture](http://sass-guidelin.es/#architecture) >
+[Main file](http://sass-guidelin.es/#main-file)
 
 ## Code Style
+
 Generally follow [Sass Guidelines](https://sass-guidelin.es) for code style and best-practices
 
 ## Linting
-SCSS style is enforced with [stylelint-scss](https://github.com/kristerkari/stylelint-scss)
+
+SCSS style is enforced with
+[stylelint-scss](https://github.com/kristerkari/stylelint-scss)
+
 - Rules are defined by these packages:
   - [stylelint-config-recommended](https://github.com/stylelint/stylelint-config-recommended)
   - [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard)
   - [stylelint-config-recommended-scss](https://github.com/kristerkari/stylelint-config-recommended-scss)
-- Rules can be overriden by adding exceptions to the `.stylelintrc.js` file. [See the docs for more details](https://github.com/kristerkari/stylelint-config-recommended-scss#extending-the-config).
+- Rules can be overriden by adding exceptions to the `.stylelintrc.js` file.
+[See the docs for more details](https://github.com/kristerkari/stylelint-config-recommended-scss#extending-the-config).
 - All SCSS files are linted EXCEPT for files in the `/assets/scss/vendors/` directory.
