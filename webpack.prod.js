@@ -1,4 +1,3 @@
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const cssNano = require('cssnano');
 const Dotenv = require('dotenv-webpack');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
@@ -12,9 +11,14 @@ const basePath = '.';
 const assetPath = `${basePath}/assets`;
 const buildPath = path.resolve(__dirname, 'public');
 
-const walkSync = (d) => fs.statSync(d).isDirectory() ? fs.readdirSync(d).map(f => walkSync(path.join(d, f))).flat().map((file) => `./${file}`) : [d];
-const getAllFilesWithExtensions = (dir, extensions) => walkSync(dir).filter((file) => extensions.some((ext) => file.endsWith(ext)))
-
+const walkSync = (d) => (
+  fs.statSync(d).isDirectory()
+    ? fs.readdirSync(d).map((f) => walkSync(path.join(d, f))).flat().map((file) => `./${file}`)
+    : [d]
+);
+const getAllFilesWithExtensions = (
+  (dir, extensions) => walkSync(dir).filter((file) => extensions.some((ext) => file.endsWith(ext)))
+);
 module.exports = {
   devtool: 'source-map',
   entry: [
