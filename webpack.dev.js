@@ -80,7 +80,7 @@ module.exports = {
       //   }],
       // },
       {
-        test: /\.(gif|png|jpe?g|webp)$/i,
+        test: /\.(gif|png|jpe?g|svg|webp)$/i,
         use: [
           'file-loader?name=[path][name].[ext]',
           {
@@ -98,7 +98,7 @@ module.exports = {
       },
       {
         // Load all icons
-        test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
+        test: /\.(eot|woff|woff2|ttf)([?]?.*)$/,
         use: [{
           loader: 'file-loader',
         }],
