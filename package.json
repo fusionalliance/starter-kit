@@ -25,14 +25,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/quicksolutions/starter-kit.git"
+    "url": "git+https://github.com/fusionalliance/starter-kit.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/quicksolutions/starter-kit/issues"
+    "url": "https://github.com/fusionalliance/starter-kit/issues"
   },
-  "homepage": "https://github.com/quicksolutions/starter-kit#readme",
+  "homepage": "https://github.com/fusionalliance/starter-kit#readme",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.0.0",
