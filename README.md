@@ -57,7 +57,7 @@ development on this starter kit.
 
 ### Image Minification
 
-- Currently requires libpng, which you can install via homebrew `brew install libpng`
+- Currently requires libpng on OSX, which you can install via homebrew `brew install libpng`
 
 ## FAQ
 
