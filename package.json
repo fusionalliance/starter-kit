@@ -16,7 +16,7 @@
     "lint": "npm run eslint && npm run stylelint && npm run markdownlint",
     "eslint": "eslint \"assets/js/**/*.js\"",
     "stylelint": "stylelint \"assets/scss/**/*.scss\"",
-    "markdownlint": "markdownlint '**/*.md'  --ignore node_modules",
+    "markdownlint": "markdownlint \"**/*.md\"  --ignore node_modules",
     "scss": "npm run build:scss -- --watch",
     "start": "http-server public",
     "test": "jest && npm run test:accessibility",
