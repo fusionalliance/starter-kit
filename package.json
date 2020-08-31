@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npm-run-all build:clean build:html build:js",
-    "build:clean": "rm -rf dist/ && rm -rf public/",
+    "build:clean": "rm -rf ./dist/ && rm -rf ./public/",
     "build:html": "env-cmd handlebars-transpile",
     "build:js": "webpack --config webpack.prod.js --mode production",
     "dev": "npm-run-all -p watch:*",
