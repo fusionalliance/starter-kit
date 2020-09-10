@@ -2,7 +2,7 @@
   "name": "starter-kit",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.mjs",
+  "main": "src/index.js",
   "scripts": {
     "build": "npm-run-all build:clean build:html build:js",
     "build:clean": "rm -rf ./dist/ && rm -rf ./public/",

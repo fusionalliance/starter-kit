@@ -1,7 +1,7 @@
-import colors from 'colors';
+const colors = require('colors');
 
 /* eslint-disable max-len */
-export default `
+module.exports = `
         ${colors.cyan('@@@@@@@@@')}     @@@@@@@@@@
        ${colors.cyan('@@@@@@@@@@@@')}   @@@@@@@@@@@          ______         _                      _ _ _
        ${colors.cyan('@@@@@@@@@@@@')}  @@@@@@@@@@@@         |  ____|       (_)               /\\   | | (_)
