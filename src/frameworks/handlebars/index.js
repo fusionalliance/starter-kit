@@ -1,3 +1,6 @@
+const fse = require('fs-extra');
+const path = require('path');
+
 // TODO: Put npm scripts back into package json
 //  "lint": "npm run eslint && npm run stylelint && npm run markdownlint",
 // "eslint": "eslint \"assets/js/**/*.js\"",
@@ -12,5 +15,15 @@
 */
 
 module.exports = async function handlebars() {
-  this.log('todo');
+  this.log('Coyping templates');
+  await this.copy(
+    path.join(__dirname, './template'),
+    this.destinationPath(),
+  );
+
+  const packageJsonExists = await fse.pathExists(this.destinationPath('package.json'));
+  if (!packageJsonExists) {
+    this.log('No package.json exists. Runnint npm init');
+    await this.asyncCommand('npm', ['init']);
+  }
 };
