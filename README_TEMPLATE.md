@@ -62,7 +62,7 @@ would like to change. Pull requests should follow
 See the previous link for an in-depth explanation, however the highlights are
 illustrated below:
 
-- the `master` branch ALWAYS reflects the code in production
+- the `main` branch ALWAYS reflects the code in production
 - a `develop` branch reflects stable changes that are not in production.
 - `feature` branches hold development of added, changed, or removed features,
   following pattern of `feature/123-feature-name` for features linked to
@@ -80,11 +80,11 @@ illustrated below:
 - `feature` and `bugfix` branches are created from `develop` and get merged back
   into `develop`
 - `release` branches are created from `develop` and always get merged into
-  `master` AND `develop`
-- `hotfix` branches are created from `master` and get merged into `master` AND `develop`
+  `main` AND `develop`
+- `hotfix` branches are created from `main` and get merged into `main` AND `develop`
 - Don't forget to update the CHANGELOG!
 
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-For more information see [LICENSE](https://github.com/quicksolutions/starter-kit/blob/master/LICENSE)
+For more information see [LICENSE](https://github.com/quicksolutions/starter-kit/blob/main/LICENSE)

@@ -69,4 +69,4 @@ discuss what you would like to change.
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-For more information see [LICENSE](https://github.com/quicksolutions/starter-kit/blob/master/LICENSE)
+For more information see [LICENSE](https://github.com/quicksolutions/starter-kit/blob/main/LICENSE)
