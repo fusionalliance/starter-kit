@@ -28,7 +28,7 @@ const frameworks = [
 const frameWorkSelections = {
   type: 'list',
   name: 'selectedFramework',
-  message: 'Which framework would you like to use?',
+  message: 'Select one of the frameworks below to create a new project. Not sure? Check out <link to framework selection aid>',
   choices: frameworks,
 };
 
