@@ -1,4 +1,5 @@
 const fse = require('fs-extra');
+const inquirer = require('inquirer');
 const path = require('path');
 
 /* eslint-disable no-useless-escape */
@@ -79,6 +80,15 @@ const dependencies = {
 /* eslint-enable */
 
 module.exports = async function handlebars() {
+  const { projectName } = await inquirer.prompt({
+    type: 'input',
+    name: 'projectName',
+    message: 'Enter the folder name for your project',
+  });
+
+  await fse.mkdir(this.destinationPath(projectName));
+  process.chdir(projectName); // change directory to new folder
+
   this.log('Coyping templates');
   await this.copy(
     path.join(__dirname, './template'),
