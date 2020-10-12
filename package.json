@@ -7,10 +7,10 @@
     "fusion-starter-kit": "bin/index.js"
   },
   "scripts": {
-    "pre-commit": "npm run lint",
     "lint": "npm run eslint && npm run markdownlint",
     "eslint": "eslint . --ext .js,.mjs",
-    "markdownlint": "markdownlint \"**/*.md\"  --ignore node_modules"
+    "markdownlint": "markdownlint \"**/*.md\"  --ignore node_modules",
+    "pre-push": "npm run lint"
   },
   "repository": {
     "type": "git",

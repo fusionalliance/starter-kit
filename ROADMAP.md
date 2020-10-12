@@ -141,5 +141,5 @@ Add standard backend including web services and data storage.
   * Could be run on web server or separate server
   * Configuration can be read by web services
 * CI/CD Pipelines
-  * Auto-deployment from master branch
+  * Auto-deployment from main branch
   * Automated testing run on Pull Requests
