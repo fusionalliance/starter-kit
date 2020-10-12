@@ -5,12 +5,11 @@ const editor = require('mem-fs-editor');
 const store = memFs.create();
 const mfs = editor.create(store);
 
-module.exports = function copy(srcPath, destinationPath, options = { globOptions: { dot: true } }) {
+module.exports = function extendJson(srcPath, contents) {
   return new Promise((resolve) => {
-    mfs.copy(
+    mfs.extendJSON(
       srcPath,
-      destinationPath,
-      options,
+      contents,
     );
     mfs.commit(() => resolve());
   });
