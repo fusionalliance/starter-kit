@@ -9,7 +9,7 @@ module.exports = {
     'import/no-extraneous-dependencies': ['error', {
       devDependencies: true,
     }],
-    'max-len': ['error', 100, {
+    'max-len': ['error', 200, {
       'ignoreComments': true,
     }],
   },
