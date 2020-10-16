@@ -22,7 +22,7 @@ Enforcing a consistent approach to start up new projects at Fusion Alliance.
 
 ## Features
 
-- Quick creation site boileerplates using several different frameworks.
+- Quick creation site boilerplates using several different frameworks.
 - Code formatting enforced with EditorConfig
 - JS linting with ESLint + AirBnB
 - Sass (SCSS) + Stylelint > CSS
