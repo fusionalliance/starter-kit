@@ -95,7 +95,7 @@ module.exports = async function handlebars() {
     this.destinationPath(),
   );
 
-  this.log('Coyping common files');
+  this.log('Copying common files');
   await this.copy(
     path.join(__dirname, '../common'),
     this.destinationPath(),
