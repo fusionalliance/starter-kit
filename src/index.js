@@ -43,7 +43,7 @@ async function starterKit() {
 
   const frameworkAction = frameworks.find((a) => a.value === selectedFramework);
   if (frameworkAction) {
-    this.log = this.log(`starter-kit:${selectedFramework}`);
+    this.log = this.log(`fusion-starter-kit:${selectedFramework}`);
     await frameworkAction.func.call(this);
   }
 }
