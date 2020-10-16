@@ -3,8 +3,8 @@ const inquirer = require('inquirer');
 const handlebarsAction = require('./frameworks/handlebars');
 const logo = require('./logo');
 const reactAction = require('./frameworks/react');
-const vueAction = require('./frameworks/vue');
 const util = require('./util');
+const vueAction = require('./frameworks/vue');
 
 
 const frameworks = [
