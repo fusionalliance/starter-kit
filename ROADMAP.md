@@ -118,6 +118,7 @@ Use generator to apply configuration to front end frameworks.
   * Changelog within the document
   * List of recommended frameworks (including no-framework option)
   * Strengths and weaknesses of each framework
+  * **Status**: In development
 * _Each framework_
   * Dev server working with the framework
   * Configuration applied to framework via utility
