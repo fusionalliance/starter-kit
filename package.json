@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/fusionalliance/starter-kit#readme",
   "dependencies": {
+    "@vue/cli": "^4.5.8",
     "cross-spawn": "^7.0.3",
     "mem-fs": "^1.2.0",
     "mem-fs-editor": "^7.0.1"

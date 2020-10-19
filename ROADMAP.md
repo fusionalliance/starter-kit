@@ -119,10 +119,16 @@ Use generator to apply configuration to front end frameworks.
   * List of recommended frameworks (including no-framework option)
   * Strengths and weaknesses of each framework
   * **Status**: In development
-* _Each framework_
+* Handlebars
   * Dev server working with the framework
   * Configuration applied to framework via utility
   * Automated testing scripts
+  * **Status**: Done
+* Vue
+  * Dev server working with the framework
+  * Configuration applied to framework via utility
+  * Automated testing scripts
+  * **Status**: In development
 
 ## 🚧 Phase 3: Full Stack Applications
 

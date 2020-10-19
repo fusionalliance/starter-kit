@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 
 - Generator to assist choosing framework
+- Vue framework option
 
 ### Changed
 
