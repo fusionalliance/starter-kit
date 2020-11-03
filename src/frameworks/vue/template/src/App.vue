@@ -23,7 +23,7 @@ export default {
       this.log(`EVENT: do:something: ${obj.value}`)
     });
 
-    EventBus.$emit('do:something', { aValue: true });
+    EventBus.$emit('do:something', { value: true });
   },
   methods: {
     log(str) {

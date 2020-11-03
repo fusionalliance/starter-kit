@@ -16,6 +16,6 @@ Object.keys(components).forEach((name) => {
 const router = new VueRouter(routes);
 
 new Vue({
-  render: h => h(App),
+  render: (h) => h(App),
   router,
 }).$mount('#app');
