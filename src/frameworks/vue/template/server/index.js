@@ -12,7 +12,7 @@ const {
   PORT = 3000,
 } = process.env;
 
-app.use(serveStatic(path.join(__dirname, 'dist')));
+app.use(serveStatic(path.join(__dirname, '../dist')));
 
 http.listen(PORT, () => {
   console.log(`listening on *:${PORT}`); // eslint-disable-line no-console

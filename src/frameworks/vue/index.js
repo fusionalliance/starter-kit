@@ -6,7 +6,7 @@ const path = require('path');
 const packageJsonScripts = {
   scripts: {
     'build:watch': 'nodemon --watch src --exec \"vue-cli-service build\" --ext scss,js,vue',
-    dev: 'concurrently \"npm run build:watch\" \"env-cmd .env npm start\"',
+    dev: 'concurrently \"npm run build:watch\" \"env-cmd npm start\"',
     start: 'node server/index.js',
   },
 };
@@ -16,6 +16,7 @@ const dependencies = {
   dependencies: {
     express: '^4.17.1',
     'serve-static': '^1.14.1',
+    'vue-router': '^3.4.8',
   },
   devDependencies: {
     concurrently: '^5.3.0',
