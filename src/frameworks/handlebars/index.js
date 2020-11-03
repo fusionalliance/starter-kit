@@ -89,15 +89,15 @@ module.exports = async function handlebars() {
   await fse.mkdir(this.destinationPath(projectName));
   process.chdir(projectName); // change directory to new folder
 
-  this.log('Copying templates');
-  await this.copy(
-    path.join(__dirname, './template'),
-    this.destinationPath(),
-  );
-
   this.log('Copying common files');
   await this.copy(
     path.join(__dirname, '../common'),
+    this.destinationPath(),
+  );
+
+  this.log('Copying templates');
+  await this.copy(
+    path.join(__dirname, './template'),
     this.destinationPath(),
   );
 
