@@ -35,7 +35,7 @@ module.exports = async function vue() {
     message: 'Enter the folder name for your project',
   });
 
-  await this.asyncCommand('vue', ['create', projectName]);
+  await this.asyncCommand('npx', ['@vue/cli@4.x', 'create', projectName, '-p', 'default']);
   process.chdir(projectName); // change directory to new folder
 
   this.log('Copying common files');
