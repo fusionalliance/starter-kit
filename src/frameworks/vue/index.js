@@ -1,3 +1,4 @@
+const fse = require('fs-extra');
 const inquirer = require('inquirer');
 const path = require('path');
 
@@ -54,5 +55,5 @@ module.exports = async function vue() {
   this.log('Adding scripts to package.json');
   await this.extendJson(this.destinationPath('package.json'), packageJsonScripts);
 
-  // TODO: Copy env.sample to .env
+  await fse.copy(this.destinationPath('.env.sample'), this.destinationPath('.env'));
 };
