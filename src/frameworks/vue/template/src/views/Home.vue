@@ -6,7 +6,7 @@
 
 export default {
   name: 'Home',
-  ata() {
+  data() {
     return {
       pageMsg: 'Home page - Hello world'
     };
