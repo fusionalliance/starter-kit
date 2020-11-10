@@ -1,0 +1,23 @@
+module.exports = {
+  parserOptions: {
+    parser: 'babel-eslint',
+    sourceType: 'module',
+  },
+  extends: [
+    'airbnb-base',
+    'plugin:vue/recommended',
+  ],
+  rules: {
+    'import/extensions': ['off'],
+    'import/no-extraneous-dependencies': ['error', {
+      devDependencies: true,
+    }],
+    'max-len': ['error', 200, {
+      'ignoreComments': true,
+    }],
+    'vue/require-default-prop': 'off',
+  },
+  plugins: [
+    'vue',
+  ],
+};

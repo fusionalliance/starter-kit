@@ -1,9 +1,10 @@
 const express = require('express');
-
-const app = express();
-const http = require('http').Server(app);
 const path = require('path');
 const serveStatic = require('serve-static');
+const http = require('http');
+
+const app = express();
+const server = http.Server(app);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -14,6 +15,6 @@ const {
 
 app.use(serveStatic(path.join(__dirname, '../dist')));
 
-http.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log(`listening on *:${PORT}`); // eslint-disable-line no-console
 });

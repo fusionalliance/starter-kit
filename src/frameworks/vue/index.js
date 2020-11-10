@@ -8,6 +8,8 @@ const packageJsonScripts = {
     'build:watch': 'nodemon --watch src --exec \"vue-cli-service build\" --ext scss,js,vue',
     dev: 'concurrently \"npm run build:watch\" \"env-cmd npm start\"',
     start: 'node server/index.js',
+    stylelint: 'stylelint \"src/assets/scss/**/*.scss\"',
+    lint: 'vue-cli-service lint && npm run stylelint',
   },
 };
 /* eslint-enable */
@@ -25,6 +27,13 @@ const dependencies = {
     'sass-loader': '^10.0.3',
     'style-resources-loader': '^1.3.3',
     '@vue/cli': '^4.5.8',
+    '@vue/eslint-config-airbnb': '^5.1.0',
+    '@vue/cli-plugin-eslint': '^4.5.8',
+    stylelint: '^11.1.1',
+    'stylelint-config-recommended': '^3.0.0',
+    'stylelint-config-recommended-scss': '^4.0.0',
+    'stylelint-config-standard': '^19.0.0',
+    'stylelint-scss': '^3.12.1',
   },
 };
 
@@ -48,6 +57,12 @@ module.exports = async function vue() {
   await this.copy(
     path.join(__dirname, './template'),
     this.destinationPath(),
+  );
+
+  // Using a .temp extension in here to avoid eslint conflicts
+  await fse.rename(
+    this.destinationPath('.eslintrc.js.temp'),
+    this.destinationPath('.eslintrc.js'),
   );
 
   this.log('Adding dependencies to package.json');
