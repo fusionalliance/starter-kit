@@ -34,6 +34,9 @@ const dependencies = {
     'stylelint-config-recommended-scss': '^4.0.0',
     'stylelint-config-standard': '^19.0.0',
     'stylelint-scss': '^3.12.1',
+    'vue-cli-plugin-style-resources-loader': '~0.1.4',
+    scss: '^0.2.4',
+    'node-sass': '^5.0.0',
   },
 };
 

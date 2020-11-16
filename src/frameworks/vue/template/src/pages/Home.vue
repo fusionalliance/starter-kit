@@ -8,7 +8,7 @@ export default {
   name: 'Home',
   ata() {
     return {
-      pageMsg: 'Home page - Hello world'
+      pageMsg: 'Home page - Hello world',
     };
   },
 };
