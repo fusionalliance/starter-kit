@@ -32,6 +32,7 @@ build/Release
 # Build Output
 /dist
 /build
+/public
 .grunt
 .next
 .nuxt

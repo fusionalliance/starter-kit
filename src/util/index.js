@@ -3,6 +3,7 @@ const copy = require('./copy');
 const destinationPath = require('./destinationPath');
 const extendJson = require('./extendJson');
 const log = require('./log');
+const writeJson = require('./writeJson');
 
 module.exports = {
   asyncCommand,
@@ -10,4 +11,5 @@ module.exports = {
   destinationPath,
   extendJson,
   log,
+  writeJson,
 };

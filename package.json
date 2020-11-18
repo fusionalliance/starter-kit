@@ -28,6 +28,7 @@
     "mem-fs-editor": "^7.0.1"
   },
   "devDependencies": {
+    "@vue/cli": "^4.5.8",
     "colors": "^1.4.0",
     "dotenv": "^8.2.0",
     "env-cmd": "^10.0.1",
