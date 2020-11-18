@@ -41,20 +41,20 @@ development on this starter kit.
 
 ## Usage
 
+### Local starter kit development
+
+1. Clone the starter-kit repo to your machine.
+1. In the fusion starter-kit repo run `npm link`. This will create a global link to your local files.
+1. You can now run `fusion-starter-kit` in the command line to run the package.
+1. The starter kit will ask you which framework you would like to use - select one
+    - Answer any additional prompts
+    - Wait for it to finish running
+1. Run `npm install`
+1. Your project is now ready to go. You can run it with `npm run dev`
+
 ### As a package
 
 TODO: Package needs to be on npm or something
-
-1. **Install starter kit package**: `npm install -g fusion-starter-kit`
-1. Run `fusion-starter-kit` in the terminal in a folder where you would like to initialize a project
-1. The starter kit will ask you which framework you would like to use - select one
-    - Answer any additional prompts
-1. Run `npm install`
-
-### Local starter kit development
-
-1. In the fusion starter-kit repo run `npm link`. This will create a global link to your local files.
-1. You can now run `fusion-starter-kit` in the command line to run the package with local changes
 
 ### Scripts
 
