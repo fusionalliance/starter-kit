@@ -1,7 +1,7 @@
 const express = require('express');
+const http = require('http');
 const path = require('path');
 const serveStatic = require('serve-static');
-const http = require('http');
 
 const app = express();
 const server = http.Server(app);
