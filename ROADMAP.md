@@ -129,6 +129,11 @@ Use generator to apply configuration to front end frameworks.
   * Configuration applied to framework via utility
   * Automated testing scripts
   * **Status**: Done
+* React
+  * Dev server working with the framework
+  * Configuration applied to framework via utility
+  * Automated testing scripts
+  * **Status**: In progress
 
 ## 🚧 Phase 3: Full Stack Applications
 
