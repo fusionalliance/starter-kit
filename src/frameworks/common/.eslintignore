@@ -32,6 +32,7 @@ build/Release
 # Build Output
 /dist
 /build
+/public
 .grunt
 .next
 .nuxt
@@ -50,7 +51,3 @@ yarn-error.log*
 
 # Code Coverage output
 lib-cov
-
-# Framework specific files
-**/webpack.*.js
-**/postcss.config.js

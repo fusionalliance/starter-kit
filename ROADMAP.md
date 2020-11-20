@@ -118,10 +118,22 @@ Use generator to apply configuration to front end frameworks.
   * Changelog within the document
   * List of recommended frameworks (including no-framework option)
   * Strengths and weaknesses of each framework
-* _Each framework_
+  * **Status**: In development
+* Handlebars
   * Dev server working with the framework
   * Configuration applied to framework via utility
   * Automated testing scripts
+  * **Status**: Done
+* Vue
+  * Dev server working with the framework
+  * Configuration applied to framework via utility
+  * Automated testing scripts
+  * **Status**: Done
+* React
+  * Dev server working with the framework
+  * Configuration applied to framework via utility
+  * Automated testing scripts
+  * **Status**: In progress
 
 ## 🚧 Phase 3: Full Stack Applications
 

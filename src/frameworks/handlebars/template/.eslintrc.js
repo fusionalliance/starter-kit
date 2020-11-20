@@ -17,13 +17,4 @@ module.exports = {
     app: true,
     document: true
   },
-  overrides: [
-    {
-      files: [ '**/template/**' ],
-      rules: {
-        'import/no-extraneous-dependencies': 'off',
-        'import/no-unresolved': 'off'
-      }
-    }
-  ]
 };
