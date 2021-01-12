@@ -51,18 +51,18 @@ development on this starter kit.
 Directions to use:
 
 1. Clone the starter-kit repo to your machine.
-2. In the fusion starter-kit repo run `npm link`. This will create an alias to the Starter Kit so that it can be run from anywhere. Think of it as a Starter Kit "utility".
-3. From a command line, navigate to where you want to create a new web project. For most developers they have a folder (i.e. "sites" or "projects") where they keep many projects.
-4. You can now run `fusion-starter-kit` in the command line to run the package.
-5. The starter kit utility will ask you questions:
+1. In the fusion starter-kit repo run `npm link`. This will create an alias to the Starter Kit so that it can be run from anywhere. Think of it as a Starter Kit "utility".
+1. From a command line, navigate to where you want to create a new web project. For most developers they have a folder (i.e. "sites" or "projects") where they keep many projects.
+1. You can now run `fusion-starter-kit` in the command line to run the package.
+1. The starter kit utility will ask you questions:
    - Which framework you would like to use - select one
    - What to name your project
    - All other questions can be answered with the default by pressing Enter
-6. Wait for it to finish running
-7. In the command line, change to the folder for the new project.
-8. Run `npm install`.
-9. Your project is now ready to start using for development.
-10. You can run it with `npm run dev`.
+1. Wait for it to finish running
+1. In the command line, change to the folder for the new project.
+1. Run `npm install`.
+1. Your project is now ready to start using for development.
+1. You can run it with `npm run dev`.
 
 ### As a package
 
