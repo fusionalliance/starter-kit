@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 
 const handlebarsAction = require('./frameworks/handlebars');
 const logo = require('./logo');
-// const reactAction = require('./frameworks/react');
+const reactAction = require('./frameworks/react');
 const util = require('./util');
 const vueAction = require('./frameworks/vue');
 
@@ -18,11 +18,11 @@ const frameworks = [
     value: 'vue',
     func: vueAction,
   },
-  // {
-  //   name: 'React',
-  //   value: 'react',
-  //   func: reactAction,
-  // },
+  {
+    name: 'React',
+    value: 'react',
+    func: reactAction,
+  },
 ];
 
 const frameWorkSelections = {
