@@ -1,0 +1,28 @@
+{
+  "name": "cra-template-fusion",
+  "version": "1.0.0",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "fusion-alliance",
+    "starter-kit"
+  ],
+  "description": "The base template for a Fusion Starter Kit - React app.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fusionalliance/starter-kit",
+    "directory": "src/frameworks/react/cra-template-fusion"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=12"
+  },
+  "bugs": {
+    "url": "https://github.com/fusionalliance/starter-kit/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ]
+}
