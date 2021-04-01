@@ -24,7 +24,6 @@ const dependencies = {
     concurrently: '^5.3.0',
     'env-cmd': '^10.1.0',
     'eslint-config-airbnb-base': '^14.0.0',
-    eslint: '^7.23.0',
     nodemon: '^2.0.6',
     'sass-loader': '^10.0.3',
     'style-resources-loader': '^1.3.3',
@@ -47,6 +46,8 @@ module.exports = async function react() {
 
   await this.asyncCommand('npx', ['create-react-app', projectName]);
   process.chdir(projectName); // change directory to new folder
+  // Are you sure you want to eject?
+  await this.asyncCommand('npm', ['run', 'eject']);
 
   this.log('Copying common files');
   await this.copy(
@@ -66,29 +67,44 @@ module.exports = async function react() {
     this.destinationPath('.eslintrc.js'),
   );
 
-  this.log('Adding dependencies to package.json');
-  await this.extendJson(this.destinationPath('package.json'), dependencies);
+  let destinationPkgJson = await this.readJson(this.destinationPath('package.json'));
+
+  const mergedDependencies = {
+    dependencies: dependencies.dependencies,
+    devDependencies: {
+      ...destinationPkgJson.dependencies,
+      ...destinationPkgJson.devDependencies,
+      ...dependencies.devDependencies,
+    },
+  };
+
+  this.log('Moving dependencies to devDependencies while adding our own');
+  await this.writeJson(this.destinationPath('package.json'), {
+    ...destinationPkgJson,
+    ...mergedDependencies,
+  });
 
   this.log('Adding scripts to package.json');
   await this.extendJson(this.destinationPath('package.json'), packageJsonScripts);
 
   this.log('Cleaning up package.json');
-  const destinationPkgJson = require(this.destinationPath('package.json')); // eslint-disable-line global-require, import/no-dynamic-require
-  delete destinationPkgJson.eslintConfig;
+  updatedPkgJson = await this.readJson(this.destinationPath('package.json'));
+  delete updatedPkgJson.eslintConfig;
 
   const devDeps = {};
   const deps = {};
-  Object.keys(destinationPkgJson.devDependencies).sort().forEach((key) => {
-    devDeps[key] = destinationPkgJson.devDependencies[key];
+  Object.keys(updatedPkgJson.dependencies).sort().forEach((key) => {
+    deps[key] = updatedPkgJson.dependencies[key];
   });
 
-  Object.keys(destinationPkgJson.dependencies).sort().forEach((key) => {
-    deps[key] = destinationPkgJson.dependencies[key];
+  Object.keys(updatedPkgJson.devDependencies).sort().forEach((key) => {
+    devDeps[key] = updatedPkgJson.devDependencies[key];
   });
-  destinationPkgJson.devDependencies = devDeps;
-  destinationPkgJson.dependencies = deps;
 
-  await this.writeJson(this.destinationPath('package.json'), destinationPkgJson);
+  updatedPkgJson.devDependencies = devDeps;
+  updatedPkgJson.dependencies = deps;
+
+  await this.writeJson(this.destinationPath('package.json'), updatedPkgJson);
 
   await fse.copy(this.destinationPath('.env.sample'), this.destinationPath('.env'));
 

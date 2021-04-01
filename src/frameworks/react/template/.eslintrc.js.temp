@@ -12,10 +12,7 @@ module.exports = {
       devDependencies: true,
     }],
     'max-len': ['error', 200, {
-      'ignoreComments': true,
+      ignoreComments: true,
     }],
   },
-  plugins: [
-    'vue',
-  ],
 };

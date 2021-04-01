@@ -1,11 +1,7 @@
-const memFs = require('mem-fs');
-const editor = require('mem-fs-editor');
-
-// https://github.com/sboudrias/mem-fs-editor
-const store = memFs.create();
-const mfs = editor.create(store);
+const getMfs = require('./getMfs');
 
 module.exports = function extendJson(srcPath, contents, replacer, spacer) {
+  const mfs = getMfs();
   return new Promise((resolve) => {
     mfs.writeJSON(
       srcPath,
