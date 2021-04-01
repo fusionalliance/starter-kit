@@ -1,5 +1,8 @@
 module.exports = {
-  extends: 'airbnb-base',
+  extends: [
+    'airbnb-base',
+    'plugin:react/recommended'
+  ],
   env: {
     browser: true,
     jest: true,
@@ -25,5 +28,10 @@ module.exports = {
         'import/no-unresolved': 'off'
       }
     }
-  ]
+  ],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 };

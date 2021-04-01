@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './fpo-test.svg';
 import './App.css';
 
