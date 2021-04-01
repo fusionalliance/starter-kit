@@ -67,7 +67,7 @@ module.exports = async function react() {
     this.destinationPath('.eslintrc.js'),
   );
 
-  let destinationPkgJson = await this.readJson(this.destinationPath('package.json'));
+  const destinationPkgJson = await this.readJson(this.destinationPath('package.json'));
 
   const mergedDependencies = {
     dependencies: dependencies.dependencies,
@@ -88,7 +88,7 @@ module.exports = async function react() {
   await this.extendJson(this.destinationPath('package.json'), packageJsonScripts);
 
   this.log('Cleaning up package.json');
-  updatedPkgJson = await this.readJson(this.destinationPath('package.json'));
+  const updatedPkgJson = await this.readJson(this.destinationPath('package.json'));
   delete updatedPkgJson.eslintConfig;
 
   const devDeps = {};
