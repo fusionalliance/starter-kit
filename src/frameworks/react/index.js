@@ -5,7 +5,7 @@ const path = require('path');
 /* eslint-disable no-useless-escape */
 const packageJsonScripts = {
   scripts: {
-    'build:watch': 'nodemon --watch src --exec \"react-scripts build\" --ext scss,js,jsx',
+    'build:watch': 'node scripts/start.js',
     dev: 'concurrently \"npm run build:watch\" \"env-cmd npm start\"',
     start: 'node server/index.js',
     stylelint: 'stylelint \"src/assets/scss/**/*.scss\"',
