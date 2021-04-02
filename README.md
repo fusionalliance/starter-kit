@@ -43,14 +43,26 @@ development on this starter kit.
 
 ### Local starter kit development
 
+- Before using please understand:
+  - Starter Kit can be thought of as a "utility" that is installed on your computer that helps you to create new website projects.
+  - Once installed, when you run Starter Kit it will scaffold a basic app that adheres to the goals in the #Objectives and #Features sections above.
+  - The starter-kit repo itself is not meant to used as an website/app repo.
+
+Directions to use:
+
 1. Clone the starter-kit repo to your machine.
-1. In the fusion starter-kit repo run `npm link`. This will create a global link to your local files.
+1. In the fusion starter-kit repo run `npm link`. This will create an alias to the Starter Kit so that it can be run from anywhere. Think of it as a Starter Kit "utility".
+1. From a command line, navigate to where you want to create a new web project. For most developers they have a folder (i.e. "sites" or "projects") where they keep many projects.
 1. You can now run `fusion-starter-kit` in the command line to run the package.
-1. The starter kit will ask you which framework you would like to use - select one
-    - Answer any additional prompts
-    - Wait for it to finish running
-1. Run `npm install`
-1. Your project is now ready to go. You can run it with `npm run dev`
+1. The starter kit utility will ask you questions:
+   - Which framework you would like to use - select one
+   - What to name your project
+   - All other questions can be answered with the default by pressing Enter
+1. Wait for it to finish running
+1. In the command line, change to the folder for the new project.
+1. Run `npm install`.
+1. Your project is now ready to start using for development.
+1. You can run it with `npm run dev`.
 
 ### As a package
 
