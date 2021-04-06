@@ -59,4 +59,6 @@ module.exports = async function angular() {
 
   this.log('Adding scripts to package.json');
   await this.extendJson(this.destinationPath('package.json'), packageJsonScripts);
+
+  await this.sortDeps();
 };
