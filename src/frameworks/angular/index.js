@@ -1,4 +1,3 @@
-// const fse = require('fs-extra');
 const inquirer = require('inquirer');
 const path = require('path');
 
@@ -48,11 +47,11 @@ module.exports = async function angular() {
     this.destinationPath(),
   );
 
-  // this.log('Copying template files');
-  // await this.copy(
-  //   path.join(__dirname, './template'),
-  //   this.destinationPath(),
-  // );
+  this.log('Copying template files');
+  await this.copy(
+    path.join(__dirname, './template'),
+    this.destinationPath(),
+  );
 
   this.log('Adding dependencies to package.json');
   await this.extendJson(this.destinationPath('package.json'), dependencies);

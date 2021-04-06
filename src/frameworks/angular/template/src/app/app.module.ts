@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,9 @@ import { HomeComponent } from './pages/home/home.component';
 // Components
 import { TopNavigationComponent } from "./components/top-navigation/top-navigation.component";
 
+// Services
+import { ExampleService } from "./services/example.service";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,9 +24,10 @@ import { TopNavigationComponent } from "./components/top-navigation/top-navigati
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ExampleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
