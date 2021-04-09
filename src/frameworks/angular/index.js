@@ -1,11 +1,14 @@
+const fse = require('fs-extra');
 const inquirer = require('inquirer');
 const path = require('path');
 
 /* eslint-disable no-useless-escape */
 const packageJsonScripts = {
   scripts: {
-    stylelint: 'stylelint \"**/*.scss\"',
+    dev: 'npm start',
     lint: 'ng lint && npm run stylelint',
+    start: 'ng serve --port 8080',
+    stylelint: 'stylelint \"**/*.scss\"',
   },
 };
 /* eslint-enable */
@@ -52,6 +55,34 @@ module.exports = async function angular() {
     path.join(__dirname, './template'),
     this.destinationPath(),
   );
+
+  this.log('Setting up global scss files');
+  await fse.remove(this.destinationPath('src/styles.scss'));
+
+  // Update angular.json to use /src/scss/styles.scss
+  const angularJson = {
+    projects: {
+      [projectName]: {
+        architect: {
+          build: {
+            options: {
+              styles: [
+                'src/scss/styles.scss',
+              ],
+            },
+          },
+          test: {
+            options: {
+              styles: [
+                'src/scss/styles.scss',
+              ],
+            },
+          },
+        },
+      },
+    },
+  };
+  await this.extendJson(this.destinationPath('angular.json'), angularJson);
 
   this.log('Adding dependencies to package.json');
   await this.extendJson(this.destinationPath('package.json'), dependencies);

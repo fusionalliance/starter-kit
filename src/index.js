@@ -11,6 +11,11 @@ const vueAction = require('./frameworks/vue');
 
 const frameworks = [
   {
+    name: 'Angular (NOT angular.js)',
+    value: 'angular',
+    func: angularAction,
+  },
+  {
     name: 'Handlebars',
     value: 'handlebars',
     func: handlebarsAction,
@@ -19,11 +24,6 @@ const frameworks = [
     name: 'Vue',
     value: 'vue',
     func: vueAction,
-  },
-  {
-    name: 'Angular (NOT angular.js)',
-    value: 'angular',
-    func: angularAction,
   },
   // {
   //   name: 'React',
