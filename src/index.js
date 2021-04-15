@@ -1,13 +1,20 @@
 const inquirer = require('inquirer');
 
-const handlebarsAction = require('./frameworks/handlebars');
 const logo = require('./logo');
-// const reactAction = require('./frameworks/react');
 const util = require('./util');
+
+const angularAction = require('./frameworks/angular');
+const handlebarsAction = require('./frameworks/handlebars');
+// const reactAction = require('./frameworks/react');
 const vueAction = require('./frameworks/vue');
 
 
 const frameworks = [
+  {
+    name: 'Angular (NOT angular.js)',
+    value: 'angular',
+    func: angularAction,
+  },
   {
     name: 'Handlebars',
     value: 'handlebars',

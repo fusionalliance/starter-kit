@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "description": "Example item 1 price",
+    "price": 25.99
+  },
+  {
+    "id": 2,
+    "description": "Example item 2 price",
+    "price": 5.01
+  },
+  {
+    "id": 2,
+    "description": "Example item 3 price",
+    "price": 420.69
+  }
+]

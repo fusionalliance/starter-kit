@@ -1,0 +1,21 @@
+/*
+This file is for loading global styling only.
+
+This is NOT for component specific styles
+*/
+
+@charset 'UTF-8';
+
+// Configuration and helpers
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+
+// Base stuff
+@import 'base/base';
+@import 'base/fonts';
+@import 'base/typography';
+@import 'base/helpers';
+
+// Themes
+@import 'themes/default';
