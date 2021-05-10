@@ -1,6 +1,6 @@
 const getMfs = require('./getMfs');
 
-module.exports = function extendJson(srcPath, contents, replacer, spacer) {
+module.exports = function writeJson(srcPath, contents, replacer, spacer) {
   const mfs = getMfs();
   return new Promise((resolve) => {
     mfs.writeJSON(
