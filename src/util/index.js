@@ -6,6 +6,7 @@ const getMfs = require('./getMfs');
 const log = require('./log');
 const read = require('./read');
 const readJson = require('./readJson');
+const sortDeps = require('./sortDeps');
 const transform = require('./transform');
 const writeJson = require('./writeJson');
 
@@ -18,6 +19,7 @@ module.exports = {
   log,
   read,
   readJson,
+  sortDeps,
   transform,
   writeJson,
 };

@@ -1,0 +1,16 @@
+<p>
+  This is an example page
+</p>
+
+<h3>Example items from home page:</h3>
+<div class="items" *ngFor="let item of items">
+  <span>{{ item }}</span>
+</div>
+<br>
+<button (click)="clearItems()">Clear items</button>
+
+<h3>Async items from service:</h3>
+<div class="items" *ngFor="let example of exampleData | async">
+  <span>{{ example.description }}:     </span>
+  <span>{{ example.price | currency }}</span>
+</div>
