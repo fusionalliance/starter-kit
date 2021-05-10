@@ -136,4 +136,11 @@ module.exports = async function react() {
     /(ReactDOM.render\([\S\s]+)(document.getElementById\('root'\))(\n\);)/,
     '$1$2,$3',
   );
+
+  // Gitignore .env files
+  await this.transform(
+    this.destinationPath('.gitignore'),
+    /\.env\.local/,
+    '.env\n.env.local',
+  );
 };
