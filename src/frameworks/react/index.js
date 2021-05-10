@@ -5,8 +5,9 @@ const path = require('path');
 /* eslint-disable no-useless-escape */
 const packageJsonScripts = {
   scripts: {
-    'build:watch': 'node scripts/start.js',
-    dev: 'concurrently \"npm run build:watch\" \"env-cmd npm start\"',
+    // 'build:watch': 'node scripts/start.js',
+    // dev: 'concurrently \"npm run build:watch\" \"env-cmd npm start\"',
+    dev: 'react-scripts start',
     start: 'node server/index.js',
     stylelint: 'stylelint \"src/assets/scss/**/*.scss\"',
     lint: 'eslint . && npm run stylelint',
@@ -18,22 +19,21 @@ const dependencies = {
   dependencies: {
     express: '^4.17.1',
     'serve-static': '^1.14.1',
-    'vue-router': '^3.4.8',
   },
   devDependencies: {
     concurrently: '^5.3.0',
     'env-cmd': '^10.1.0',
     'eslint-config-airbnb-base': '^14.0.0',
-    nodemon: '^2.0.6',
-    'sass-loader': '^10.0.3',
-    'style-resources-loader': '^1.3.3',
-    stylelint: '^11.1.1',
-    'stylelint-config-recommended': '^3.0.0',
-    'stylelint-config-recommended-scss': '^4.0.0',
-    'stylelint-config-standard': '^19.0.0',
-    'stylelint-scss': '^3.12.1',
-    scss: '^0.2.4',
-    'node-sass': '^5.0.0',
+    // nodemon: '^2.0.6',
+    // 'sass-loader': '^10.0.3',
+    // 'style-resources-loader': '^1.3.3',
+    // stylelint: '^11.1.1',
+    // 'stylelint-config-recommended': '^3.0.0',
+    // 'stylelint-config-recommended-scss': '^4.0.0',
+    // 'stylelint-config-standard': '^19.0.0',
+    // 'stylelint-scss': '^3.12.1',
+    // scss: '^0.2.4',
+    // 'node-sass': '^5.0.0',
   },
 };
 
@@ -46,8 +46,7 @@ module.exports = async function react() {
 
   await this.asyncCommand('npx', ['create-react-app', projectName]);
   process.chdir(projectName); // change directory to new folder
-  // Are you sure you want to eject?
-  await this.asyncCommand('npm', ['run', 'eject']);
+  // Don't eject, this just clutters up dependencies and custom scripts
 
   this.log('Copying common files');
   await this.copy(
@@ -67,6 +66,7 @@ module.exports = async function react() {
     this.destinationPath('.eslintrc.js'),
   );
 
+  // make src/util/sortDeps.js use this.readJson so we don't get a cached version
   const destinationPkgJson = await this.readJson(this.destinationPath('package.json'));
 
   const mergedDependencies = {
@@ -108,7 +108,32 @@ module.exports = async function react() {
 
   await fse.copy(this.destinationPath('.env.sample'), this.destinationPath('.env'));
 
-  // TODO: Tell the developer they can use npm instead of yarn
-  // Do I use webvitals at all?
-  // Should I just run eslint --fix?
+  // Add parentheses around arrow function parameter
+  await this.transform(
+    this.destinationPath('src/reportWebVitals.js'),
+    /^(const \w+ = )(\w+)( => {\n[\S\s]+)/,
+    '$1($2)$3',
+  );
+
+  // Add newlines for web vitals arguments
+  // { getCLS, getFID, getFCP, getLCP, getTTFB }
+  // import('web-vitals').then(({
+  //   getCLS,
+  //   getFID,
+  //   getFCP,
+  //   getLCP,
+  //   getTTFB,
+  // }) => {
+  await this.transform(
+    this.destinationPath('src/reportWebVitals.js'),
+    /( +)(\S+)\({ getCLS, getFID, getFCP, getLCP, getTTFB }\)/g,
+    '$1$2({\n$1  getCLS,\n$1  getFID,\n$1  getFCP,\n$1  getLCP,\n$1  getTTFB,\n$1})',
+  );
+
+  // Add dangling comma for ReactDOM.render method arguments
+  await this.transform(
+    this.destinationPath('src/index.js'),
+    /(ReactDOM.render\([\S\s]+)(document.getElementById\('root'\))(\n\);)/,
+    '$1$2,$3',
+  );
 };
