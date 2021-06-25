@@ -27,13 +27,13 @@ const dependencies = {
     // nodemon: '^2.0.6',
     // 'sass-loader': '^10.0.3',
     // 'style-resources-loader': '^1.3.3',
-    // stylelint: '^11.1.1',
-    // 'stylelint-config-recommended': '^3.0.0',
-    // 'stylelint-config-recommended-scss': '^4.0.0',
-    // 'stylelint-config-standard': '^19.0.0',
-    // 'stylelint-scss': '^3.12.1',
-    // scss: '^0.2.4',
-    // 'node-sass': '^5.0.0',
+    stylelint: '^11.1.1',
+    'stylelint-config-recommended': '^3.0.0',
+    'stylelint-config-recommended-scss': '^4.0.0',
+    'stylelint-config-standard': '^19.0.0',
+    'stylelint-scss': '^3.12.1',
+    scss: '^0.2.4',
+    'node-sass': '^5.0.0',
   },
 };
 
@@ -106,6 +106,8 @@ module.exports = async function react() {
 
   await this.writeJson(this.destinationPath('package.json'), updatedPkgJson);
 
+  // Should we run `npm install` again?
+
   await fse.copy(this.destinationPath('.env.sample'), this.destinationPath('.env'));
 
   // Add parentheses around arrow function parameter
@@ -129,6 +131,16 @@ module.exports = async function react() {
     /( +)(\S+)\({ getCLS, getFID, getFCP, getLCP, getTTFB }\)/g,
     '$1$2({\n$1  getCLS,\n$1  getFID,\n$1  getFCP,\n$1  getLCP,\n$1  getTTFB,\n$1})',
   );
+
+  // Add scss bundle to index
+  await this.transform(
+    this.destinationPath('src/index.js'),
+    /(import '.\/index.css';)/,
+    'import \'./assets/scss/app.scss\';',
+  );
+
+  // Remove old index.css
+  await fse.remove(this.destinationPath('src/index.css'));
 
   // Add dangling comma for ReactDOM.render method arguments
   await this.transform(
