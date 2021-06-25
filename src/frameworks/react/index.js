@@ -43,7 +43,7 @@ module.exports = async function react() {
     message: 'Enter the folder name for your project',
   });
 
-  await this.asyncCommand('npx', ['create-react-app', projectName]);
+  await this.asyncCommand('npx', ['create-react-app', projectName, '--use-npm']);
   process.chdir(projectName); // change directory to new folder
   // Don't eject, this just clutters up dependencies and custom scripts
 
@@ -154,4 +154,7 @@ module.exports = async function react() {
     /\.env\.local/,
     '.env\n.env.local',
   );
+
+  // Install the new dependencies
+  await this.asyncCommand('npm', ['install']);
 };
