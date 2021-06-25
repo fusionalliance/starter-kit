@@ -36,7 +36,7 @@ export default () => {
       <Provider store={store}>
         <Router>
           <SiteNavigation navigation={navLinks} />
-            <img alt="React logo" src={logo} />
+          <img alt="React logo" src={logo} />
           <Switch>
             <Route exact path="/">
               <Home />
