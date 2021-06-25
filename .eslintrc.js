@@ -1,8 +1,19 @@
 module.exports = {
-  extends: 'airbnb-base',
   env: {
     browser: true,
     jest: true,
+  },
+  parser: 'babel-eslint',
+  extends: [
+    'airbnb-base',
+    'plugin:react/recommended'
+  ],
+  // plugins: [
+  //   'react',
+  // ],
+  globals: {
+    app: true,
+    document: true
   },
   rules: {
     'import/extensions': ['off'],
@@ -12,10 +23,6 @@ module.exports = {
     'max-len': ['error', 200, {
       'ignoreComments': true,
     }],
-  },
-  globals: {
-    app: true,
-    document: true
   },
   overrides: [
     {
