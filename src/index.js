@@ -21,14 +21,14 @@ const frameworks = [
     func: handlebarsAction,
   },
   {
-    name: 'Vue',
-    value: 'vue',
-    func: vueAction,
-  },
-  {
     name: 'React',
     value: 'react',
     func: reactAction,
+  },
+  {
+    name: 'Vue',
+    value: 'vue',
+    func: vueAction,
   },
 ];
 

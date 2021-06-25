@@ -21,19 +21,20 @@ const dependencies = {
     'serve-static': '^1.14.1',
   },
   devDependencies: {
-    concurrently: '^5.3.0',
+    '@reduxjs/toolkit': '^1.6.0',
     'env-cmd': '^10.1.0',
     'eslint-config-airbnb-base': '^14.0.0',
-    // nodemon: '^2.0.6',
-    // 'sass-loader': '^10.0.3',
-    // 'style-resources-loader': '^1.3.3',
+    'node-sass': '^5.0.0',
+    'react-redux': '^7.2.4',
+    'react-router-dom': '^5.2.0',
+    redux: '^4.1.0',
+    'redux-devtools': '^3.7.0',
     stylelint: '^11.1.1',
     'stylelint-config-recommended': '^3.0.0',
     'stylelint-config-recommended-scss': '^4.0.0',
     'stylelint-config-standard': '^19.0.0',
     'stylelint-scss': '^3.12.1',
     scss: '^0.2.4',
-    'node-sass': '^5.0.0',
   },
 };
 
@@ -139,8 +140,16 @@ module.exports = async function react() {
     'import \'./assets/scss/app.scss\';',
   );
 
+  await this.transform(
+    this.destinationPath('src/index.js'),
+    /(import App from '.\/App';)/,
+    'import App from \'./App.jsx\';',
+  );
+
   // Remove old index.css
   await fse.remove(this.destinationPath('src/index.css'));
+  // Remove old App component
+  await fse.remove(this.destinationPath('src/App.js'));
 
   // Add dangling comma for ReactDOM.render method arguments
   await this.transform(
