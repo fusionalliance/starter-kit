@@ -1,6 +1,9 @@
 module.exports = {
+  env: {
+    browser: true,
+  },
+  parser: 'babel-eslint',
   parserOptions: {
-    parser: 'babel-eslint',
     sourceType: 'module',
   },
   extends: [
@@ -14,5 +17,14 @@ module.exports = {
     'max-len': ['error', 200, {
       ignoreComments: true,
     }],
+    'no-unused-vars': ['off'],
   },
+  overrides: [
+    {
+      files: '**/*.test.js',
+      env: {
+        jest: true,
+      },
+    },
+  ],
 };
