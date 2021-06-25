@@ -5,8 +5,6 @@ const path = require('path');
 /* eslint-disable no-useless-escape */
 const packageJsonScripts = {
   scripts: {
-    // 'build:watch': 'node scripts/start.js',
-    // dev: 'concurrently \"npm run build:watch\" \"env-cmd npm start\"',
     dev: 'react-scripts start',
     start: 'node server/index.js',
     stylelint: 'stylelint \"src/assets/scss/**/*.scss\"',
@@ -119,14 +117,6 @@ module.exports = async function react() {
   );
 
   // Add newlines for web vitals arguments
-  // { getCLS, getFID, getFCP, getLCP, getTTFB }
-  // import('web-vitals').then(({
-  //   getCLS,
-  //   getFID,
-  //   getFCP,
-  //   getLCP,
-  //   getTTFB,
-  // }) => {
   await this.transform(
     this.destinationPath('src/reportWebVitals.js'),
     /( +)(\S+)\({ getCLS, getFID, getFCP, getLCP, getTTFB }\)/g,

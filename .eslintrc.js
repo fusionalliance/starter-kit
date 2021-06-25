@@ -8,9 +8,6 @@ module.exports = {
     'airbnb-base',
     'plugin:react/recommended'
   ],
-  // plugins: [
-  //   'react',
-  // ],
   globals: {
     app: true,
     document: true
