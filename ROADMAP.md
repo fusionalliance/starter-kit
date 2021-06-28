@@ -1,6 +1,6 @@
 # Plan for Starter Kit(s)
 
-Contributors: _Tim Gardner, Travis Moser (chair), David Ragsdale, Dustin Rea_
+Contributors: _Tim Gardner, Travis Moser (chair), David Ragsdale, Scott Colegrove, Rebecca Bretzinger, Dustin Rea (former)_
 
 This document outlines the plan for providing consistent approaches to start up
 new projects at Fusion Alliance. Specific projects might require deviations from
@@ -123,17 +123,22 @@ Use generator to apply configuration to front end frameworks.
   * Dev server working with the framework
   * Configuration applied to framework via utility
   * Automated testing scripts
-  * **Status**: Done
+  * **Status**: Complete
 * Vue
-  * Dev server working with the framework
-  * Configuration applied to framework via utility
-  * Automated testing scripts
-  * **Status**: Done
+  * Dev server working with the framework ~~[#46](https://github.com/fusionalliance/starter-kit/pull/46)~~
+  * Configuration applied to framework via utility ~~[#46](https://github.com/fusionalliance/starter-kit/pull/46)~~
+  * Automated testing scripts ~~[#46](https://github.com/fusionalliance/starter-kit/pull/46)~~
+  * **Status**: Complete
 * React
-  * Dev server working with the framework
-  * Configuration applied to framework via utility
-  * Automated testing scripts
-  * **Status**: In progress
+  * Dev server working with the framework ~~[#59](https://github.com/fusionalliance/starter-kit/pull/59)~~
+  * Configuration applied to framework via utility ~~[#59](https://github.com/fusionalliance/starter-kit/pull/59)~~
+  * Automated testing scripts ~~[#59](https://github.com/fusionalliance/starter-kit/pull/59)~~
+  * **Status**: Complete
+* Angular
+  * Dev server working with the framework ~~[#58](https://github.com/fusionalliance/starter-kit/pull/58)~~
+  * Configuration applied to framework via utility ~~[#58](https://github.com/fusionalliance/starter-kit/pull/58)~~
+  * Automated testing scripts ~~[#58](https://github.com/fusionalliance/starter-kit/pull/58)~~
+  * **Status**: Complete
 
 ## 🚧 Phase 3: Full Stack Applications
 
