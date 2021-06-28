@@ -5,7 +5,7 @@ const util = require('./util');
 
 const angularAction = require('./frameworks/angular');
 const handlebarsAction = require('./frameworks/handlebars');
-// const reactAction = require('./frameworks/react');
+const reactAction = require('./frameworks/react');
 const vueAction = require('./frameworks/vue');
 
 
@@ -21,15 +21,15 @@ const frameworks = [
     func: handlebarsAction,
   },
   {
+    name: 'React',
+    value: 'react',
+    func: reactAction,
+  },
+  {
     name: 'Vue',
     value: 'vue',
     func: vueAction,
   },
-  // {
-  //   name: 'React',
-  //   value: 'react',
-  //   func: reactAction,
-  // },
 ];
 
 const frameWorkSelections = {
